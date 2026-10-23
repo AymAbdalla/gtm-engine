@@ -1,0 +1,13 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes
+A01,Brightmill Manufacturing,brightmill.example,brightmill-mfg.example,650,manufacturing,US,P1,,active,rep-1,ACC-1001,
+A02,Northpine Logistics,northpine-logistics.example,,420,logistics,US,P2,,active,rep-1,ACC-1002,
+A03,Coastal Ledger Services,coastal-ledger.example,,1500,professional services,CA,P3,,active,rep-1,ACC-1003,
+A04,Quarry Lane Health,quarrylane-health.example,,900,healthcare services,US,P1,,active,rep-1,ACC-1004,
+A05,Tallgrass Software,tallgrass.example,,120,software,US,,,active,rep-1,ACC-1005,
+A06,Meridian Spendworks,meridian-spend.example,,300,software,US,,competitor,active,rep-1,ACC-1006,
+A07,Riverbend County Schools,riverbend-schools.example,,3000,education,US,,,active,rep-1,ACC-1007,
+A08,Oakhaven Freight,oakhaven-freight.example,,380,logistics,US,P2,,active,rep-1,ACC-1008,
+A09,Brightmill Manufacturing Co,brightmill.example,,650,manufacturing,US,,,active,rep-1,ACC-1009,
+A10,Northpine Logistics LLC,northpine-freight.example,,400,logistics,US,,,active,rep-1,ACC-1010,
+A11,Saltmarsh Foods,saltmarsh.example,,760,manufacturing,US,P3,customer,active,rep-1,ACC-1011,
+A12,Harborview Clinics,harborview.example,,510,healthcare services,US,P2,,active,rep-1,ACC-1012,

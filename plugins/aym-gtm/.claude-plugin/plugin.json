@@ -1,0 +1,11 @@
+{
+  "name": "aym-gtm",
+  "version": "0.6.0",
+  "description": "GTM engineering skills: define the ICP, clean lists and audit the CRM, build the prospect and account books, score buying signals, build plays, plan the day, sync with the CRM through files, review the funnel, map the sales motion, and draft outreach to files. Vendor-neutral, never sends.",
+  "author": {
+    "name": "Ayman Abdalla"
+  },
+  "repository": "https://github.com/AymAbdalla/gtm-engine",
+  "license": "MIT",
+  "skills": "./skills/"
+}

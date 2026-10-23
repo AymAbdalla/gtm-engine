@@ -1,0 +1,4 @@
+signal_id,account_name,domain,type,event_date,summary,source_url,person_name,person_title
+S030,Silverbirch Clinics,silverbirch.example,topic_intent,2026-10-14,Research surge on the topic expense management software,https://intent.example/report/2026-10-14,,
+S031,Coastal Ledger Group,coastal-ledger.example,topic_intent,2026-10-08,Research surge on the topic corporate cards,https://intent.example/report/2026-10-08,,
+S033,Ridgeway Health Partners,ridgewayhealth.example,topic_intent,2026-10-02,Research surge on the topic AP automation,https://intent.example/report/2026-10-02,,

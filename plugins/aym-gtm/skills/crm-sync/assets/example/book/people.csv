@@ -1,0 +1,11 @@
+person_id,account_id,first_name,last_name,title,email,email_status,phone,linkedin_url,country,status,sequence,tags,crm_id,updated_at
+p01,A01,Dana,Okafor,Chief Financial Officer,dana.okafor@northpine-logistics.example,verified,+1-312-555-0101,https://linkedin.example/in/dana-okafor,US,active,seq-trigger-finance,,C-P01,
+p02,A01,Marcus,Lindqvist,Controller,marcus.lindqvist@northpine-logistics.example,verified,+1-312-555-0102,https://linkedin.example/in/marcus-lindqvist,US,active,seq-trigger-finance,,C-P02,
+p03,A01,Priya,Raman,Head of IT,priya.raman@northpine-logistics.example,verified,+1-312-555-0103,https://linkedin.example/in/priya-raman,US,active,,,C-P03,2026-10-18T10:00:00-04:00
+p04,A02,Hollis,Brandt,"Vice President, Finance",hollis.brandt@brightmill.example,verified,+1-617-555-0144,https://linkedin.example/in/hollis-brandt,US,active,,,C-P04,
+p05,A02,Tessa,Moreau,Accounts Payable Manager,tessa.moreau@brightmill.example,verified,+1-617-555-0105,https://linkedin.example/in/tessa-moreau,US,active,,,C-P05,
+p06,A03,Grace,Ilunga,Controller,grace.ilunga@coastal-ledger.example,verified,+1-206-555-0106,https://linkedin.example/in/grace-ilunga,US,active,,,C-P06,
+p07,A03,Sam,Whitlock,Chief Financial Officer,sam.whitlock@coastal-ledger.example,verified,+1-206-555-0107,https://linkedin.example/in/sam-whitlock,US,active,,,,
+p08,A01,Owen,Patel,Procurement Lead,owen.patel@northpine-logistics.example,verified,+1-312-555-0108,https://linkedin.example/in/owen-patel,US,active,seq-trigger-finance,,C-P08,
+p09,A02,Alex,Rivera,Controller,alex.rivera@brightmill.example,verified,,https://linkedin.example/in/alex-rivera,US,active,,,,
+p10,A02,Alex,Rivera,Procurement Lead,alex.rivera@brightmill-mfg.example,verified,,https://linkedin.example/in/alex-rivera,US,active,,,,

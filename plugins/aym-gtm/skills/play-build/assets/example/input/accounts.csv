@@ -1,0 +1,11 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes,tags,past_value
+A01,Northpine Logistics,northpine-logistics.example,,640,logistics,US,P1,,active,you,C-A01,,,
+A02,Brightmill Manufacturing,brightmill.example,,820,manufacturing,US,P2,,active,you,C-A02,,,
+A03,Coastal Ledger Partners,coastal-ledger.example,,450,professional services,US,P2,,live_deal,you,C-A03,"Open deal, owner leads",,
+A04,Ironleaf Freight,ironleaf.example,,390,logistics,US,P3,,active,you,C-A04,Lost on timing in spring,lost_deal,42000
+A05,Maplecrest Clinics,maplecrest.example,,510,healthcare services,US,P2,,active,you,C-A05,,,18000
+A06,Spendwise Labs,spendwise.example,,300,software,US,,competitor,active,you,C-A06,,,
+A07,Riverbend Parts,riverbend-parts.example,,700,manufacturing,US,P1,,active,jordan,C-A07,Owned by a teammate,,
+A08,Tallgrass Software,tallgrass-soft.example,,150,software,US,P3,,active,you,C-A08,,,
+A09,Harborlantern Services,harborlantern.example,,950,professional services,CA,P3,,active,you,C-A09,,,30000
+A10,Quillstone Health,quillstone-health.example,,260,healthcare services,US,P2,,active,you,C-A10,,,

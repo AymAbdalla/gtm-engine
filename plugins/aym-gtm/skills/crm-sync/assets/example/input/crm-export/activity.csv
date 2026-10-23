@@ -1,0 +1,4 @@
+activity_id,external_id,timestamp,crm_id,channel,direction,sequence,step,outcome,notes
+CA-01,a001,2026-10-14T10:00:00-04:00,C-P02,email,out,seq-trigger-finance,1,sent,
+CA-10,,2026-10-17T13:00:00-05:00,C-P04,call,out,,,no_answer,logged in the CRM dialer
+CA-11,,2026-10-17T13:20:00-05:00,C-P05,call,out,,,left_voicemail,

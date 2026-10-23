@@ -1,0 +1,750 @@
+{
+  "seller": {
+    "name": "Ledgerline",
+    "offer": "spend management for finance teams",
+    "note": "Made-up example company. Replace every section with your own."
+  },
+  "icp": {
+    "size": {
+      "min": 200,
+      "max": 2000,
+      "sweet_min": 300,
+      "sweet_max": 1000
+    },
+    "countries": [
+      "US",
+      "CA"
+    ],
+    "industries_in": [
+      "logistics",
+      "manufacturing",
+      "professional services",
+      "healthcare services",
+      "software"
+    ],
+    "industries_out": [
+      "government",
+      "education",
+      "nonprofit"
+    ],
+    "exclude_relationships": [
+      "competitor",
+      "customer",
+      "partner",
+      "parent_decides"
+    ],
+    "technographics": {
+      "required_any": [],
+      "excluded": [],
+      "note": "Optional. Tool names matched against the accounts 'tech' column (semicolon list). Empty lists turn the rule off."
+    },
+    "review_by": "2027-04-30"
+  },
+  "personas": [
+    {
+      "id": "cfo",
+      "label": "CFO / VP Finance",
+      "lane": "finance",
+      "role": "decision_maker",
+      "points": 5,
+      "title_patterns": [
+        "\\bcfo\\b",
+        "chief financial",
+        "\\bvp,? (of )?finance",
+        "vice president,? (of )?finance",
+        "head of finance"
+      ]
+    },
+    {
+      "id": "controller",
+      "label": "Controller",
+      "lane": "finance",
+      "role": "champion",
+      "points": 4,
+      "title_patterns": [
+        "\\bcontroller\\b",
+        "comptroller",
+        "finance director",
+        "director,? (of )?finance"
+      ]
+    },
+    {
+      "id": "ap_manager",
+      "label": "Accounts Payable Manager",
+      "lane": "finance",
+      "role": "influencer",
+      "points": 3,
+      "title_patterns": [
+        "accounts payable",
+        "\\bap (manager|lead|specialist)",
+        "payables"
+      ]
+    },
+    {
+      "id": "it_director",
+      "label": "IT Director / Head of IT",
+      "lane": "tech",
+      "role": "technical_gatekeeper",
+      "points": 3,
+      "title_patterns": [
+        "\\bit director",
+        "director,? (of )?it\\b",
+        "head of it\\b",
+        "\\bcio\\b",
+        "\\bit manager",
+        "director,? information technology"
+      ]
+    },
+    {
+      "id": "procurement",
+      "label": "Procurement lead",
+      "lane": "ops",
+      "role": "influencer",
+      "points": 2,
+      "title_patterns": [
+        "procurement",
+        "purchasing",
+        "sourcing"
+      ]
+    }
+  ],
+  "not_buyer_titles": [
+    "\\bintern\\b",
+    "student",
+    "recruit",
+    "sales rep",
+    "account executive"
+  ],
+  "review_titles": [
+    "consultant",
+    "advisor",
+    "founder"
+  ],
+  "region_title_rule": {
+    "other_region_words": [
+      "emea",
+      "apac",
+      "latam",
+      "europe",
+      "asia",
+      "anz",
+      "dach",
+      "uk"
+    ],
+    "senior_exempt_patterns": [
+      "chief",
+      "\\bvp\\b",
+      "vice president",
+      "\\bhead of\\b",
+      "\\bcfo\\b",
+      "\\bcio\\b"
+    ]
+  },
+  "freemail_domains": [
+    "gmail.com",
+    "yahoo.com",
+    "outlook.com",
+    "hotmail.com",
+    "icloud.com",
+    "aol.com",
+    "proton.me",
+    "protonmail.com",
+    "freemail.example"
+  ],
+  "stop_statuses": [
+    "hold",
+    "booked",
+    "not_interested",
+    "wrong_person",
+    "left",
+    "do_not_contact",
+    "archived"
+  ],
+  "dnc_tags": [
+    "opted_out",
+    "dnc_all"
+  ],
+  "left_tags": [
+    "moved"
+  ],
+  "channel_block_tags": {
+    "email": [
+      "bounced"
+    ],
+    "call": [
+      "dnc_phone",
+      "phone_failed"
+    ],
+    "linkedin": []
+  },
+  "segments": [
+    {
+      "id": "mid-logistics",
+      "label": "Mid-size logistics",
+      "industries": [
+        "logistics"
+      ],
+      "size_min": 300,
+      "size_max": 1000,
+      "market_count": 4200,
+      "market_count_source": "made-up example count, not real data",
+      "noise_check": {
+        "reviewed": 25,
+        "noisy": 3
+      }
+    },
+    {
+      "id": "manufacturing",
+      "label": "Manufacturing",
+      "industries": [
+        "manufacturing"
+      ],
+      "size_min": 300,
+      "size_max": 2000,
+      "market_count": 61000,
+      "market_count_source": "made-up example count, not real data"
+    },
+    {
+      "id": "services-health",
+      "label": "Professional and healthcare services",
+      "industries": [
+        "professional services",
+        "healthcare services"
+      ],
+      "size_min": 300,
+      "size_max": 1000
+    },
+    {
+      "id": "software",
+      "label": "Software",
+      "industries": [
+        "software"
+      ],
+      "size_min": 200,
+      "size_max": 1000,
+      "market_count": 180,
+      "market_count_source": "made-up example count, not real data"
+    }
+  ],
+  "market_bands": [
+    {
+      "label": "too narrow",
+      "max": 249
+    },
+    {
+      "label": "tight",
+      "max": 999
+    },
+    {
+      "label": "sweet spot",
+      "max": 4999
+    },
+    {
+      "label": "healthy",
+      "max": 50000
+    },
+    {
+      "label": "too broad",
+      "max": null
+    }
+  ],
+  "scoring": {
+    "account": {
+      "sweet_spot": 3,
+      "in_band": 1,
+      "segment_match": 1,
+      "tier": {
+        "P1": 3,
+        "P2": 2,
+        "P3": 1
+      }
+    }
+  },
+  "clean": {
+    "cap_per_account": 3,
+    "stale_touch_days": 365,
+    "phone_points": {
+      "direct": 30,
+      "switchboard": 10,
+      "international": 5,
+      "toll_free": 0,
+      "malformed": 0,
+      "none": 0
+    },
+    "persona_multiplier": 3,
+    "size_points": {
+      "sweet": 10,
+      "band": 5
+    },
+    "never_touched_bonus": 5,
+    "defect_penalty": 10,
+    "dnc_phone_penalty": 40
+  },
+  "verify": {
+    "min_score_by_channel": {
+      "email": 80,
+      "call": 80,
+      "linkedin": null
+    }
+  },
+  "audit": {
+    "overdue_days": 21,
+    "stale_tags": [
+      "this_week",
+      "call_today"
+    ],
+    "stale_days": 14
+  },
+  "book": {
+    "sources": [
+      "input/researched.csv",
+      "input/people.csv"
+    ],
+    "required_sources": [
+      "input/people.csv"
+    ],
+    "ready_min": 2,
+    "priority_tiers": [
+      "P1",
+      "P2"
+    ],
+    "area_code_tz": {
+      "312": "America/Chicago",
+      "617": "America/New_York",
+      "206": "America/Los_Angeles",
+      "416": "America/Toronto",
+      "512": "America/Chicago",
+      "415": "America/Los_Angeles"
+    },
+    "ready_requires_roles": [
+      "decision_maker"
+    ]
+  },
+  "ranking": {
+    "top_n": 3,
+    "fit_points": {
+      "sweet_spot": 5,
+      "in_band": 0,
+      "segment_match": 2
+    }
+  },
+  "send_gate": {
+    "email_status_ok": [
+      "verified"
+    ],
+    "min_email_score": 80,
+    "block_catch_all": true,
+    "require_own_domain": true,
+    "countries": [
+      "US",
+      "CA"
+    ]
+  },
+  "signals": {
+    "types": {
+      "new_leader": {
+        "weight": 5,
+        "expires_days": 180,
+        "seat": "the named new leader"
+      },
+      "leader_gap": {
+        "weight": 4,
+        "expires_days": 180,
+        "seat": "the most senior remaining leader, never the person who left"
+      },
+      "hiring": {
+        "weight": 4,
+        "expires_days": 60,
+        "seat": "the likely manager of the open role"
+      },
+      "funding": {
+        "weight": 4,
+        "expires_days": 365,
+        "seat": "decision maker"
+      },
+      "topic_intent": {
+        "weight": 3,
+        "expires_days": 30,
+        "seat": "decision maker"
+      },
+      "growth": {
+        "weight": 2,
+        "expires_days": 180,
+        "seat": "decision maker"
+      },
+      "layoffs": {
+        "weight": 0,
+        "expires_days": 180,
+        "seat": "context only"
+      }
+    },
+    "recency": [
+      [
+        30,
+        1.0
+      ],
+      [
+        90,
+        0.7
+      ],
+      [
+        100000,
+        0.4
+      ]
+    ]
+  },
+  "copy": {
+    "min_words": 25,
+    "max_words": 60,
+    "hard_max_words": 85,
+    "questions": 1,
+    "end_on_question": true,
+    "banned": [
+      "em_dash",
+      "exclamation",
+      "links",
+      "gendered_pronouns"
+    ],
+    "banned_phrases": [
+      "just checking in",
+      "circle back",
+      "touch base",
+      "hope this finds you well"
+    ],
+    "max_proof_lines": 1,
+    "connect_note_max_chars": 300,
+    "angles": [
+      "trigger",
+      "peer_proof",
+      "problem_question",
+      "cost_of_waiting",
+      "smaller_ask",
+      "referral",
+      "close_the_loop"
+    ],
+    "proof_max_age_days": 365,
+    "intent_words": [
+      "researching",
+      "been looking into",
+      "been looking at",
+      "visited our",
+      "on our website",
+      "your team has been reading",
+      "intent data",
+      "in-market",
+      "showed interest in"
+    ],
+    "number_ok_phrases": [
+      "first half",
+      "second half"
+    ],
+    "number_words": [
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine",
+      "ten",
+      "dozen",
+      "twice",
+      "double",
+      "doubled",
+      "triple",
+      "tripled",
+      "half",
+      "percent"
+    ],
+    "claim_phrases": [
+      "teams we work with",
+      "teams like yours",
+      "companies like yours",
+      "our customers",
+      "our clients",
+      "customers see",
+      "we help",
+      "we helped",
+      "most teams we"
+    ],
+    "fact_words": [
+      "raised",
+      "funding",
+      "round",
+      "acquired",
+      "acquisition",
+      "named",
+      "appointed",
+      "hired",
+      "hire",
+      "promoted",
+      "joined",
+      "ipo",
+      "launched",
+      "expanded"
+    ]
+  },
+  "daily": {
+    "user_timezone": "America/New_York",
+    "holidays": [
+      "2026-10-16"
+    ],
+    "call_window": {
+      "start": "08:00",
+      "end": "21:00"
+    },
+    "preferred_window": {
+      "start": "09:00",
+      "end": "17:00"
+    },
+    "call_blocks": [
+      {
+        "name": "morning",
+        "start": "09:30",
+        "end": "11:30"
+      },
+      {
+        "name": "afternoon",
+        "start": "14:00",
+        "end": "16:30"
+      }
+    ],
+    "call_slot_minutes": 5,
+    "min_days_between_touches": 3,
+    "max_extra_cards": 20,
+    "extras_per_account": 1,
+    "inbound_tags": [
+      "inbound"
+    ],
+    "warm_tags": [
+      "warm",
+      "referral",
+      "past_reply"
+    ],
+    "weights": {
+      "signal": 3,
+      "seat": 2,
+      "recency": 1,
+      "fit": 2,
+      "due_step": 2,
+      "single_threaded": 1,
+      "deliverability": 1
+    },
+    "recency_peak_days": [
+      4,
+      14
+    ],
+    "never_touched_recency": 0.8,
+    "flat_gap": 0.05,
+    "fact_ladder": [
+      "inbound_untouched",
+      "never_touched",
+      "buying_role",
+      "seniority",
+      "newest"
+    ],
+    "block_order": [
+      "inbound",
+      "warm",
+      "linkedin_only",
+      "volume"
+    ],
+    "reply_lookback_days": 30,
+    "owner": null
+  },
+  "funnel": {
+    "segment_by": "segment",
+    "min_n_rate": 20,
+    "anecdote_n": 5,
+    "z": 1.96,
+    "bounce_bands": [
+      [
+        0.02,
+        "healthy"
+      ],
+      [
+        0.05,
+        "watch"
+      ],
+      [
+        1.0,
+        "stop"
+      ]
+    ],
+    "min_connects_per_arm": 20,
+    "min_first_touches_per_angle": 30,
+    "minutes_per_touch": {
+      "email": 3,
+      "call": 2,
+      "linkedin": 4
+    },
+    "logging_gap_share": 0.1,
+    "benchmarks": {},
+    "benchmark_alarm_factor": 10,
+    "lag_lookback_days": 30,
+    "cohort_maturation_days": 21,
+    "cohort_weeks": 8
+  },
+  "motion": {
+    "max_nodes": 15,
+    "risk_order": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "pick_exclude_risk": [
+      "high"
+    ],
+    "require_else_branch": true,
+    "loop_max_identical_runs": 3,
+    "accept_share_floor": 0.5
+  },
+  "play": {
+    "daily_cap": 5,
+    "per_account_cap": 1,
+    "recent_touch_days": 14,
+    "owner": "you",
+    "seat_order": [
+      "decision_maker",
+      "champion",
+      "influencer",
+      "technical_gatekeeper"
+    ],
+    "signal_seat_roles": {
+      "new_leader": [
+        "named",
+        "decision_maker",
+        "champion"
+      ],
+      "leader_gap": [
+        "decision_maker",
+        "champion"
+      ],
+      "hiring": [
+        "champion",
+        "decision_maker"
+      ],
+      "funding": [
+        "decision_maker",
+        "champion"
+      ],
+      "topic_intent": [
+        "decision_maker",
+        "champion"
+      ],
+      "growth": [
+        "decision_maker",
+        "champion"
+      ]
+    },
+    "max_quiet_runs": 3,
+    "default_sequence_days": 10,
+    "tier_points": {
+      "P1": 3,
+      "P2": 2,
+      "P3": 1
+    },
+    "event": {
+      "invites_per_account": 2,
+      "finish_days_before": 2,
+      "file": "input/events.csv"
+    },
+    "reactivation": {
+      "min_quiet_days": 60,
+      "gap_factor": 1.5,
+      "default_interval_days": 90,
+      "account_tags": [
+        "lost_deal"
+      ],
+      "recent_touch_days": 14
+    },
+    "multithread": {
+      "engaged_outcomes": [
+        "replied",
+        "interested",
+        "not_now",
+        "booked",
+        "connected"
+      ],
+      "per_account_cap": 2
+    },
+    "stop_outcomes": [
+      "opt_out",
+      "not_interested",
+      "wrong_person",
+      "left"
+    ],
+    "email_stop_outcomes": [
+      "bounced"
+    ],
+    "conversation_outcomes": [
+      "replied",
+      "interested",
+      "not_now",
+      "booked"
+    ],
+    "conversation_days": 30,
+    "override_conversation_words": [
+      "demo",
+      "asked",
+      "requested",
+      "replied",
+      "reply",
+      "meeting",
+      "call back",
+      "intro"
+    ],
+    "holdout_share": 0
+  },
+  "sync": {
+    "fields": [
+      "first_name",
+      "last_name",
+      "title",
+      "email",
+      "phone",
+      "linkedin_url",
+      "country",
+      "status"
+    ],
+    "field_map": {
+      "first_name": "first_name",
+      "last_name": "last_name",
+      "title": "title",
+      "email": "email",
+      "phone": "phone",
+      "linkedin_url": "linkedin_url",
+      "country": "country",
+      "status": "status"
+    },
+    "account_fields": [
+      "name",
+      "domain",
+      "employees",
+      "industry",
+      "country",
+      "tier"
+    ],
+    "row_floor_share": 0.8,
+    "pilot_rows": 3,
+    "next_step_business_days": 3,
+    "create_missing": true,
+    "carry_forward_runs": 5,
+    "bounce_crm_field": "email_status",
+    "bounce_crm_value": "invalid",
+    "status_map": {
+      "do not contact": "do_not_contact",
+      "dnc": "do_not_contact",
+      "unsubscribed": "do_not_contact",
+      "opted out": "do_not_contact",
+      "on hold": "hold",
+      "meeting booked": "booked",
+      "not interested": "not_interested",
+      "wrong person": "wrong_person",
+      "left company": "left",
+      "no longer at company": "left"
+    },
+    "status_to_crm": {}
+  }
+}

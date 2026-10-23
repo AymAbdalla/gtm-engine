@@ -1,0 +1,16 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes
+acc-001,Northpine Logistics,northpine-logistics.example,,640,logistics,US,P1,,active,demo-owner,crm-a001,
+acc-002,Brightmill Manufacturing,brightmill.example,brightmill-parts.example,1450,manufacturing,US,P2,,active,demo-owner,crm-a002,
+acc-003,Coastal Ledger Partners,coastal-ledger.example,,410,professional services,CA,P2,,active,demo-owner,crm-a003,
+acc-004,Quillstone Health Services,quillstone-health.example,,820,healthcare services,US,P3,,active,demo-owner,crm-a004,
+acc-005,Tidewell Software,tidewell.example,,260,software,US,P3,,active,demo-owner,crm-a005,
+acc-006,Ferncrest Freight,ferncrest-freight.example,,90,logistics,US,P3,,active,demo-owner,crm-a006,Too small for the ICP
+acc-007,Granite Arc Industries,granitearc.example,,5200,manufacturing,US,P1,,active,demo-owner,crm-a007,Too large for the ICP
+acc-008,Lakemoor County Services,lakemoor-county.example,,700,government,US,P3,,active,demo-owner,crm-a008,
+acc-009,Saltmarsh Academy,saltmarsh-academy.example,,450,education,US,P3,,active,demo-owner,crm-a009,
+acc-010,Spendwise Labs,spendwise-labs.example,,380,software,US,,competitor,active,demo-owner,crm-a010,Sells a competing product
+acc-011,Orchard Row Clinics,orchardrow.example,,530,healthcare services,US,P2,customer,active,demo-owner,crm-a011,Already a customer
+acc-012,Kestrel Tooling,kestrel-tooling.example,,600,manufacturing,DE,P2,,active,demo-owner,crm-a012,
+acc-013,Harbor Lantern Retail,harborlantern.example,,900,retail,US,P3,,active,demo-owner,crm-a013,
+acc-014,Willowgate Consulting,willowgate.example,,,professional services,US,P3,,active,demo-owner,crm-a014,Headcount unknown
+acc-015,Redfern Supply Chain,redfern-supply.example,redfern-sc.example,300,logistics,CA,P2,,hold,demo-owner,crm-a015,On hold by the account owner

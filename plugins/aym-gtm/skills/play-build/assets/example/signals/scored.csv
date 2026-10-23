@@ -1,0 +1,7 @@
+account_id,name,score,top_type,playable,why_not,why_now,source_url,event_date,seat,live_signals,signals,check
+A02,Brightmill Manufacturing,7.8,new_leader,yes,,Named Dana Whitfield as Chief Financial Officer (source dated 2026-09-28).,https://news.example/brightmill-new-cfo,2026-09-28,"Dana Whitfield, Chief Financial Officer (the named new leader)",2,new_leader:2026-09-28; hiring:2026-08-01,
+A01,Northpine Logistics,4.0,hiring,yes,,Posted an opening for an Accounts Payable Manager (source dated 2026-10-05).,https://jobs.example/northpine/ap-manager,2026-10-05,the likely manager of the open role,1,hiring:2026-10-05,
+A03,Coastal Ledger Partners,4.6,leader_gap,yes,,"Announced that its VP Finance, Marcus Lee, is leaving (source dated 2026-09-15).",https://news.example/coastal-ledger-vp,2026-09-15,"the most senior remaining leader, never the person who left; not Marcus Lee",1,leader_gap:2026-09-15,
+A07,Riverbend Parts,4.0,funding,yes,,Closed a growth funding round (source dated 2026-10-01).,https://news.example/riverbend-funding,2026-10-01,decision maker,1,funding:2026-10-01,
+A10,Quillstone Health,3.0,topic_intent,yes,,Timing only: research interest in spend controls (do not mention).,,2026-10-12,decision maker,1,topic_intent:2026-10-12,
+A05,Maplecrest Clinics,0.0,layoffs,no,only context signals,weak case: nothing dated to point to,,,context only,0,layoffs:2026-09-20,

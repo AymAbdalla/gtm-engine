@@ -1,0 +1,17 @@
+{
+  "name": "gtm-engine",
+  "owner": {
+    "name": "Ayman Abdalla"
+  },
+  "metadata": {
+    "description": "GTM engineering skills on plain files: the ICP, list quality, buying signals, the account book, plays, outreach, the daily plan, CRM sync, funnel review and the sales motion. Vendor-neutral, never sends."
+  },
+  "plugins": [
+    {
+      "name": "aym-gtm",
+      "source": "./plugins/aym-gtm",
+      "description": "GTM engineering skills: define the ICP, clean lists and audit the CRM, build the prospect and account books, score buying signals, build plays, plan the day, sync with the CRM through files, review the funnel, map the sales motion, and draft outreach to files. Vendor-neutral, never sends.",
+      "version": "0.6.0"
+    }
+  ]
+}

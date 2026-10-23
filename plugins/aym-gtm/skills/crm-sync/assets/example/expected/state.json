@@ -1,0 +1,177 @@
+{
+  "baseline": {
+    "C-P01": {
+      "country": "US",
+      "email": "dana.okafor@northpine-logistics.example",
+      "first_name": "Dana",
+      "last_name": "Okafor",
+      "linkedin_url": "https://linkedin.example/in/dana-okafor",
+      "phone": "+1-312-555-0101",
+      "status": "active",
+      "title": "CFO"
+    },
+    "C-P02": {
+      "country": "US",
+      "email": "marcus.lindqvist@northpine-logistics.example",
+      "first_name": "Marcus",
+      "last_name": "Lindqvist",
+      "linkedin_url": "https://linkedin.example/in/marcus-lindqvist",
+      "phone": "+1-312-555-0102",
+      "status": "active",
+      "title": "Controller"
+    },
+    "C-P03": {
+      "country": "US",
+      "email": "priya.raman@northpine-logistics.example",
+      "first_name": "Priya",
+      "last_name": "Raman",
+      "linkedin_url": "https://linkedin.example/in/priya-raman",
+      "phone": "+1-312-555-0103",
+      "status": "active",
+      "title": "Director of IT"
+    },
+    "C-P04": {
+      "country": "US",
+      "email": "hollis.brandt@brightmill.example",
+      "first_name": "Hollis",
+      "last_name": "Brandt",
+      "linkedin_url": "https://linkedin.example/in/hollis-brandt",
+      "phone": "+1-617-555-0104",
+      "status": "active",
+      "title": "Vice President, Finance"
+    },
+    "C-P05": {
+      "country": "US",
+      "email": "tessa.moreau@brightmill.example",
+      "first_name": "Tessa",
+      "last_name": "Moreau",
+      "linkedin_url": "https://linkedin.example/in/tessa-moreau",
+      "phone": "+1-617-555-0105",
+      "status": "active",
+      "title": "Accounts Payable Manager"
+    },
+    "C-P08": {
+      "country": "US",
+      "email": "owen.patel@northpine-logistics.example",
+      "first_name": "Owen",
+      "last_name": "Patel",
+      "linkedin_url": "https://linkedin.example/in/owen-patel",
+      "phone": "+1-312-555-0108",
+      "status": "active",
+      "title": "Procurement Lead"
+    }
+  },
+  "datasets": {
+    "activity": {
+      "hash": "d01743ffb84dbc5ccddf80174789e2337d6d9712145a17e35e2476a3531e5b7a",
+      "rows": 3
+    },
+    "bounces": {
+      "hash": "7909aca3b1d94911c9487ee25a21e8f2146c94f149ba4e0c2f772ea616d97b85",
+      "rows": 1
+    },
+    "people": {
+      "hash": "1fe9f4a6f69ff7c9eb91aedbdeac6814b3a58202a5a6ab7047735337427db322",
+      "rows": 9
+    }
+  },
+  "export_ids": [
+    "C-P01",
+    "C-P02",
+    "C-P03",
+    "C-P04",
+    "C-P05",
+    "C-P08",
+    "C-P11",
+    "C-P12",
+    "C-P99"
+  ],
+  "fingerprint": "1c1165a66dcdc188c1c4ab5fd663894ce3ad17bc291be1605d89432176404b95",
+  "input_state": {
+    "baseline": {
+      "C-P01": {
+        "phone": "+1-312-555-0101",
+        "title": "CFO"
+      },
+      "C-P02": {
+        "phone": "+1-312-555-0102"
+      },
+      "C-P03": {
+        "title": "Director of IT"
+      },
+      "C-P04": {
+        "phone": "+1-617-555-0104"
+      },
+      "C-P05": {
+        "email": "tessa.moreau@brightmill.example"
+      }
+    },
+    "datasets": {
+      "people": {
+        "hash": "previous",
+        "rows": 9
+      }
+    },
+    "export_ids": [
+      "C-P01",
+      "C-P02",
+      "C-P03",
+      "C-P04",
+      "C-P05",
+      "C-P06",
+      "C-P08"
+    ],
+    "last_run": "2026-10-15",
+    "pending_bounces": {
+      "p03": {
+        "crm_id": "C-P03",
+        "email": "priya.raman@northpine-logistics.example",
+        "since": "2026-10-10"
+      }
+    },
+    "watermark": "2026-10-15T00:00:00+00:00"
+  },
+  "last_run": "2026-10-20",
+  "pending_book": {
+    "p07": {
+      "evidence": "a008",
+      "reason": "opt_out logged 2026-10-18",
+      "runs": 0,
+      "since": "2026-10-18",
+      "status": "do_not_contact",
+      "tags": [
+        "opted_out"
+      ]
+    }
+  },
+  "pending_bounces": {
+    "p04": {
+      "crm_id": "C-P04",
+      "email": "hollis.brandt@brightmill.example",
+      "since": "2026-10-18"
+    },
+    "p08": {
+      "crm_id": "C-P08",
+      "email": "owen.patel@northpine-logistics.example",
+      "since": "2026-10-19"
+    }
+  },
+  "planned_writes": {
+    "create:p07": "2026-10-20",
+    "log:a002": "2026-10-20",
+    "log:a003": "2026-10-20",
+    "log:a004": "2026-10-20",
+    "log:a005": "2026-10-20",
+    "log:a008": "2026-10-20"
+  },
+  "processed_activity": [
+    "a001",
+    "a002",
+    "a003",
+    "a004",
+    "a005",
+    "a008",
+    "crm-CA-10"
+  ],
+  "watermark": "2026-10-19T09:00:00-04:00"
+}

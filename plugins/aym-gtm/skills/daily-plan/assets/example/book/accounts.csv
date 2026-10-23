@@ -1,0 +1,7 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes,people_count,buying_group_count,send_ok_count,readiness,lanes_covered,lanes_missing,strategy,strategy_reason,strategy_override,pain,pain_status,next_step,tags
+A01,Northpine Logistics,northpine-logistics.example,,640,logistics,US,P1,,active,you,C-A01,,,,,,,,signal,playable signal: hiring,,,hypothesis,,
+A02,Brightmill Manufacturing,brightmill.example,,420,manufacturing,US,P2,,active,you,C-A02,,,,,,,,signal,playable signal: new_leader,,,hypothesis,,
+A04,Ironleaf Freight,ironleaf.example,,880,logistics,US,P2,,active,you,C-A04,,,,,,,,automated,no other rule matched,,,hypothesis,,
+A05,Maplecrest Supply,maplecrest.example,,310,manufacturing,US,P3,,active,you,C-A05,,,,,,,,automated,no other rule matched,,,hypothesis,,
+A07,Riverbend Components,riverbend-parts.example,,530,manufacturing,US,P2,,active,you,C-A07,,,,,,,,priority,tier P2,,,hypothesis,,
+A09,Harborview Clinics,harborview-clinics.example,,720,healthcare services,US,P2,,active,you,C-A09,,,,,,,,automated,no other rule matched,,,hypothesis,,

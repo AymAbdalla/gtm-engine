@@ -1,0 +1,8 @@
+person_id,sequence,step,due_date,status
+P02,seq-controller-a,3,2026-08-20,active
+P06,seq-vp-a,4,2026-09-10,active
+P11,seq-cfo-a,2,2026-10-22,active
+P11,seq-event-b,1,2026-10-21,active
+P13,seq-cfo-a,5,2026-09-30,closed
+P19,seq-cfo-a,1,2026-10-19,active
+P21,seq-ap-a,2,2026-10-18,active

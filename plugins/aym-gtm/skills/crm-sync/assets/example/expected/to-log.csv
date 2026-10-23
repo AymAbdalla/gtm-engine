@@ -1,0 +1,2 @@
+activity_id,timestamp,person_id,account_id,channel,direction,sequence,step,play_id,angle,opener,outcome,notes,source
+crm-CA-10,2026-10-17T13:00:00-05:00,p04,A02,call,out,,,,,,no_answer,logged in the CRM dialer,import

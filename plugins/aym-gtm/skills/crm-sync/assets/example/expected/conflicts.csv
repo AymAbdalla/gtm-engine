@@ -1,0 +1,2 @@
+object,record_id,person_id,field,book_value,crm_value,baseline,book_time,crm_time,reason
+person,C-P04,p04,phone,+1-617-555-0144,+1-617-555-0199,+1-617-555-0104,,,"both sides changed and a time is missing, unreadable or after today"

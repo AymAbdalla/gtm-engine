@@ -1,0 +1,3 @@
+account_id,name,score,top_type,playable,why_not,why_now,source_url,event_date,seat
+A08,Maplecrest Clinics,5.0,new_leader,yes,,Maplecrest Clinics named a new CFO on 2026-10-01 (press release).,https://maplecrest.example/news/new-cfo,2026-10-01,the named new leader
+A10,Ashford Advisory,0,layoffs,no,only context signals,,https://ashford-advisory.example/news,2026-09-20,context only

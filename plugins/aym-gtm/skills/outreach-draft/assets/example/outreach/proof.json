@@ -1,0 +1,52 @@
+{
+  "_note": "Made-up example registry. None of these claims are real.",
+  "entries": [
+    {
+      "id": "pr-01",
+      "status": "VERIFIED",
+      "text": "Finance teams on Ledgerline close the month 3 days sooner.",
+      "source": "example only: case-studies/closing-time.md",
+      "verified_date": "2026-09-15",
+      "size_band": "200-2000",
+      "personas": [
+        "cfo",
+        "controller"
+      ]
+    },
+    {
+      "id": "pr-02",
+      "status": "VERIFIED",
+      "text": "AP teams cut invoice chasing to one weekly review.",
+      "source": "example only: case-studies/ap-review.md",
+      "verified_date": "2026-08-30",
+      "size_band": "300-1000",
+      "personas": [
+        "ap_manager",
+        "controller"
+      ]
+    },
+    {
+      "id": "pr-03",
+      "status": "SLOT",
+      "text": "",
+      "claim": "Hours an AP team saves each month",
+      "source": "",
+      "verified_date": "",
+      "personas": [
+        "ap_manager"
+      ],
+      "note": "No sourced number yet, so this claim cannot be made."
+    },
+    {
+      "id": "pr-04",
+      "status": "QUARANTINED",
+      "text": "Ledgerline pays for itself in 60 days.",
+      "source": "example only: old slide, original data not found",
+      "verified_date": "2025-11-01",
+      "personas": [
+        "all"
+      ],
+      "note": "Source could not be found. Do not use."
+    }
+  ]
+}

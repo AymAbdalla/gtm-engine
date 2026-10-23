@@ -1,0 +1,7 @@
+play_id,person_id,account_id,seat,sequence,sequence_start,variables,rank,approved,drop_reason
+winback-q4,p08,A04,decision_maker,seq-winback,2026-10-21,"{""company"": ""Ironleaf Freight"", ""first_name"": ""Rafael"", ""last_topic"": """", ""last_touch"": ""2026-04-02"", ""quiet_days"": ""201""}",1,,
+winback-q4,p15,A09,decision_maker,seq-winback,2026-10-21,"{""company"": ""Harborlantern Services"", ""first_name"": ""Nadia"", ""last_topic"": """", ""last_touch"": ""2026-07-10"", ""quiet_days"": ""102""}",2,,
+winback-q4,p10,A05,decision_maker,seq-winback,2026-10-21,"{""company"": ""Maplecrest Clinics"", ""first_name"": ""Owen"", ""last_topic"": """", ""last_touch"": ""2026-07-01"", ""quiet_days"": ""111""}",3,,
+winback-q4,p09,A04,,seq-winback,,,,,account cap: 1 per account
+winback-q4,p11,A05,,seq-winback,,,,,persona procurement is not in this play
+winback-q4,p16,A09,,seq-winback,,,,,email or call gate: title is not a buyer

@@ -1,0 +1,70 @@
+{
+  "_note": "Made-up example sequence for the fictional seller Ledgerline.",
+  "sequences": [
+    {
+      "id": "seq-trigger-finance",
+      "version": 1,
+      "persona": "controller",
+      "who": "Controllers at in-ICP accounts with a playable signal from the last 90 days",
+      "angle": "trigger",
+      "variables": {
+        "first_name": {
+          "description": "Prospect first name",
+          "example": "Dana"
+        },
+        "company": {
+          "description": "Account name as people say it",
+          "example": "Brightmill"
+        },
+        "trigger_fact": {
+          "description": "One sourced, dated fact in plain words",
+          "example": "you are hiring an AP lead"
+        }
+      },
+      "steps": [
+        {
+          "day": 1,
+          "order": 1,
+          "channel": "email",
+          "thread": "new",
+          "proof": "pr-01",
+          "subject": "{{company}} month end",
+          "body": "Hi {{first_name}}, I saw {{trigger_fact}}. When a finance team adds people, month end often gets slower before it gets faster. Finance teams on Ledgerline close the month 3 days sooner. Is close speed something you are working on this quarter?"
+        },
+        {
+          "day": 2,
+          "order": 1,
+          "channel": "call",
+          "thread": "new",
+          "subject": "",
+          "body": "Call reason: {{trigger_fact}}. Ask how month end runs today and who owns approvals."
+        },
+        {
+          "day": 4,
+          "order": 1,
+          "channel": "email",
+          "thread": "reply",
+          "subject": "",
+          "body": "{{first_name}}, one more thought. New hires in finance usually inherit the approval process as it is. If approvals at {{company}} still run through inboxes, a short look at how others set them up could help. Would that be useful?"
+        },
+        {
+          "day": 7,
+          "order": 1,
+          "channel": "linkedin",
+          "thread": "new",
+          "subject": "",
+          "body": "Hi {{first_name}}, I work with finance teams on month end and saw {{trigger_fact}}. Happy to connect."
+        }
+      ],
+      "stop_rules": [
+        "any reply",
+        "meeting booked",
+        "not interested",
+        "wrong person",
+        "opted out",
+        "email bounced",
+        "reply from anyone at the same account stops every sequence there"
+      ]
+    }
+  ]
+}

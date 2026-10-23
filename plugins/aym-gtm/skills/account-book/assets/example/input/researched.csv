@@ -1,0 +1,5 @@
+account_id,first_name,last_name,title,email,email_status,email_score,phone,linkedin_url,country,timezone,status,last_touch_date,sequence,tags,notes
+A01,Dana,Okafor,Chief Financial Officer,dana.okafor@northpine-logistics.example,verified,92,+1-312-555-0151,https://linkedin.example/in/dana-okafor,US,,active,,,,
+A02,Hollis,Brandt,"Vice President, Finance",hollis.brandt@brightmill-mfg.example,verified,97,,https://linkedin.example/in/hollis-brandt,US,,active,,,,
+A08,Ezra,Whitfield,Controller,,verified,92,,https://linkedin.example/in/ezra-whitfield,US,,active,,,,
+A09,Corinne,Vasquez,Director of IT,corinne.vasquez@riverbend-parts.example,verified,92,+1-312-555-0116,https://linkedin.example/in/corinne-vasquez,US,,active,,,,

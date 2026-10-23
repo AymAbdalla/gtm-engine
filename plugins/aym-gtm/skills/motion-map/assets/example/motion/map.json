@@ -1,0 +1,841 @@
+{
+  "motion": {
+    "name": "Ledgerline signal-led outbound",
+    "seller": "Ledgerline (made-up example)",
+    "summary": "One rep, a scheduled builder and an executor run signal-led outbound to finance teams. All data is made up."
+  },
+  "roles": [
+    {
+      "id": "rep",
+      "label": "SDR",
+      "kind": "human"
+    },
+    {
+      "id": "ae",
+      "label": "Account executive",
+      "kind": "human"
+    },
+    {
+      "id": "builder",
+      "label": "Scheduled builder",
+      "kind": "scheduled_builder"
+    },
+    {
+      "id": "executor",
+      "label": "Executor",
+      "kind": "executor"
+    }
+  ],
+  "systems": [
+    {
+      "id": "workspace",
+      "label": "GTM workspace files",
+      "live": false,
+      "operator": "builder"
+    },
+    {
+      "id": "activity_log",
+      "label": "Activity log file",
+      "live": false,
+      "operator": "rep"
+    },
+    {
+      "id": "sequencer",
+      "label": "Your sequencer",
+      "live": true,
+      "operator": "rep"
+    },
+    {
+      "id": "calendar",
+      "label": "Your calendar",
+      "live": true,
+      "operator": "rep"
+    },
+    {
+      "id": "crm",
+      "label": "Your CRM",
+      "live": true,
+      "operator": "executor"
+    }
+  ],
+  "start": "S01",
+  "ends": [
+    "S11",
+    "S14"
+  ],
+  "stages": [
+    {
+      "id": "S01",
+      "name": "Pull public signals",
+      "kind": "task",
+      "trigger": {
+        "type": "clock",
+        "detail": "weekdays at 7am"
+      },
+      "work": "mechanical",
+      "owner": "builder",
+      "raci": {
+        "r": "builder",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [
+        "workspace"
+      ],
+      "inputs": [
+        "saved public searches"
+      ],
+      "outputs": [
+        "signals/raw/<date>/"
+      ],
+      "volume_per_week": 5,
+      "minutes_per_item": 15,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "automatic",
+        "level": "draft",
+        "human_reads": "signals/raw pull folder",
+        "approval_point": "",
+        "off_switch": "pause file in signals/"
+      },
+      "readiness": {
+        "visible_today": [
+          "job posts",
+          "leadership news",
+          "funding news"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S02",
+          "when": ""
+        }
+      ],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "medium"
+      },
+      "irreversible": false,
+      "loop": {
+        "repeats_weekly": true,
+        "auto_check": "the scorer skips any row without a source link or a date",
+        "budget": "one run each weekday, 15 minutes at most",
+        "sees_results": true,
+        "state_file": "signals/state.json",
+        "do_not_retry": [],
+        "stop_after_identical_runs": 3
+      }
+    },
+    {
+      "id": "S02",
+      "name": "Score signals",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "mechanical",
+      "owner": "builder",
+      "raci": {
+        "r": "builder",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [
+        "workspace"
+      ],
+      "inputs": [
+        "signals/raw"
+      ],
+      "outputs": [
+        "signals/scored.csv"
+      ],
+      "volume_per_week": 5,
+      "minutes_per_item": 10,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "automatic",
+        "level": "draft",
+        "human_reads": "signals/report.md",
+        "approval_point": "",
+        "off_switch": "pause file in signals/"
+      },
+      "readiness": {
+        "visible_today": [
+          "accounts with domains",
+          "signal weights in gtm.json"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S03",
+          "when": ""
+        }
+      ],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "low"
+      },
+      "irreversible": false,
+      "loop": {
+        "repeats_weekly": true,
+        "auto_check": "tests for the scoring math and the playable gate",
+        "budget": "one run each weekday, 15 minutes at most",
+        "sees_results": true,
+        "state_file": "signals/state.json",
+        "do_not_retry": [],
+        "stop_after_identical_runs": 3
+      }
+    },
+    {
+      "id": "S03",
+      "name": "Real reason to reach out now?",
+      "kind": "decision",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "mechanical",
+      "owner": "builder",
+      "raci": {
+        "r": "builder",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 0,
+      "minutes_per_item": 0,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "batch",
+        "level": "suggest",
+        "human_reads": "playable list with why-now lines",
+        "approval_point": "rep reads the playable list",
+        "off_switch": "skip the play"
+      },
+      "readiness": {
+        "visible_today": [
+          "playable gate"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S04",
+          "when": "playable"
+        },
+        {
+          "to": "S01",
+          "when": "else"
+        }
+      ],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "low"
+      },
+      "irreversible": false,
+      "decision": {
+        "question": "Is there a dated, sourced reason to reach out now?",
+        "owner": "rule",
+        "exact_fact": true,
+        "consequential": true,
+        "if_wrong": "a cold account gets a timing message with no real reason",
+        "check": "the playable gate in the scorer",
+        "accountable": "rep"
+      }
+    },
+    {
+      "id": "S04",
+      "name": "Build the play and pick seats",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "mechanical",
+      "owner": "builder",
+      "raci": {
+        "r": "builder",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [
+        "workspace"
+      ],
+      "inputs": [
+        "signals/scored.csv",
+        "book/people.csv"
+      ],
+      "outputs": [
+        "plays/<id>/enroll.csv"
+      ],
+      "volume_per_week": 1,
+      "minutes_per_item": 45,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "batch",
+        "level": "suggest",
+        "human_reads": "plays/<id>/funnel.md",
+        "approval_point": "rep marks approved rows",
+        "off_switch": "do not run build_play"
+      },
+      "readiness": {
+        "visible_today": [
+          "send gate",
+          "seat rules"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S09",
+          "when": ""
+        }
+      ],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "low"
+      },
+      "irreversible": false
+    },
+    {
+      "id": "S09",
+      "name": "Find direct dials for picked seats",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "mechanical",
+      "owner": "rep",
+      "raci": {
+        "r": "rep",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 20,
+      "minutes_per_item": 5,
+      "cold_rate": 0.1,
+      "automation": {
+        "tier": "manual",
+        "level": "none",
+        "human_reads": "",
+        "approval_point": "",
+        "off_switch": ""
+      },
+      "readiness": {
+        "visible_today": [
+          "phone type per person"
+        ],
+        "missing": [
+          "about 1 in 3 picked seats has no direct dial"
+        ],
+        "cleanup": [
+          "run data-quality and work the enrich list"
+        ]
+      },
+      "next": [
+        {
+          "to": "S05",
+          "when": ""
+        }
+      ],
+      "waste": "waiting",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "medium"
+      },
+      "irreversible": false
+    },
+    {
+      "id": "S05",
+      "name": "Approve the list",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "judgment",
+      "owner": "rep",
+      "raci": {
+        "r": "rep",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 1,
+      "minutes_per_item": 20,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "manual",
+        "level": "none",
+        "human_reads": "enroll.csv with drop reasons",
+        "approval_point": "rep writes yes in approved",
+        "off_switch": ""
+      },
+      "readiness": {
+        "visible_today": [
+          "counted drops per rule"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S06",
+          "when": ""
+        }
+      ],
+      "waste": "waiting",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "low"
+      },
+      "irreversible": false
+    },
+    {
+      "id": "S06",
+      "name": "Draft first touches",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "judgment",
+      "owner": "builder",
+      "raci": {
+        "r": "builder",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [
+        "workspace"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 40,
+      "minutes_per_item": 6,
+      "cold_rate": 0.05,
+      "automation": {
+        "tier": "batch",
+        "level": "draft",
+        "human_reads": "outreach/drafts/<date>.md and the lint report",
+        "approval_point": "rep reads each draft before sending",
+        "off_switch": "do not draft"
+      },
+      "readiness": {
+        "visible_today": [
+          "copy rules",
+          "proof registry",
+          "why-now lines"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S07",
+          "when": ""
+        }
+      ],
+      "waste": "rework",
+      "risk": {
+        "automated_wrong": "medium",
+        "left_manual": "medium"
+      },
+      "irreversible": false
+    },
+    {
+      "id": "S07",
+      "name": "Send and enroll",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "mechanical",
+      "owner": "rep",
+      "raci": {
+        "r": "rep",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "sequencer"
+      ],
+      "writes": [
+        "sequencer"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 40,
+      "minutes_per_item": 2,
+      "cold_rate": 0.05,
+      "automation": {
+        "tier": "manual",
+        "level": "none",
+        "human_reads": "each draft",
+        "approval_point": "rep presses send in the sequencer",
+        "off_switch": ""
+      },
+      "readiness": {
+        "visible_today": [
+          "send gate yes"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S08",
+          "when": "reply"
+        }
+      ],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "high",
+        "left_manual": "low"
+      },
+      "irreversible": true,
+      "exceptions": [
+        {
+          "usually": "send from the sequencer",
+          "sometimes": "a reply in an old thread is sent by hand"
+        }
+      ]
+    },
+    {
+      "id": "S08",
+      "name": "What did the reply mean?",
+      "kind": "decision",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "judgment",
+      "owner": "rep",
+      "raci": {
+        "r": "rep",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "sequencer"
+      ],
+      "writes": [],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 0,
+      "minutes_per_item": 0,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "manual",
+        "level": "none",
+        "human_reads": "",
+        "approval_point": "rep reads every reply",
+        "off_switch": ""
+      },
+      "readiness": {
+        "visible_today": [
+          "reply outcomes list"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S11",
+          "when": "booked"
+        },
+        {
+          "to": "S12",
+          "when": "else"
+        }
+      ],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "low"
+      },
+      "irreversible": false,
+      "decision": {
+        "question": "Is this a booked meeting, a not now, a no, or something else?",
+        "owner": "human",
+        "exact_fact": false,
+        "consequential": true,
+        "if_wrong": "a booked meeting is logged as not now and the follow-up goes out anyway",
+        "check": "rep reads every reply",
+        "accountable": "rep"
+      }
+    },
+    {
+      "id": "S11",
+      "name": "Hand off the meeting",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "judgment",
+      "owner": "rep",
+      "raci": {
+        "r": "rep",
+        "a": "rep",
+        "c": [],
+        "i": [
+          "ae"
+        ]
+      },
+      "systems": [
+        "calendar"
+      ],
+      "writes": [
+        "calendar"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 3,
+      "minutes_per_item": 15,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "manual",
+        "level": "none",
+        "human_reads": "",
+        "approval_point": "rep sends the invite",
+        "off_switch": ""
+      },
+      "readiness": {
+        "visible_today": [
+          "meeting notes template"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "high",
+        "left_manual": "low"
+      },
+      "irreversible": true
+    },
+    {
+      "id": "S12",
+      "name": "Log outcomes and set the next step",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "mechanical",
+      "owner": "rep",
+      "raci": {
+        "r": "rep",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "activity_log"
+      ],
+      "writes": [
+        "activity_log"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 200,
+      "minutes_per_item": 2,
+      "cold_rate": 0.3,
+      "automation": {
+        "tier": "manual",
+        "level": "none",
+        "human_reads": "log/activity.csv",
+        "approval_point": "",
+        "off_switch": ""
+      },
+      "readiness": {
+        "visible_today": [
+          "outcome list",
+          "activity log columns"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S06",
+          "when": "next step due"
+        },
+        {
+          "to": "S13",
+          "when": "end of day"
+        }
+      ],
+      "waste": "manual",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "high"
+      },
+      "irreversible": false,
+      "exceptions": [
+        {
+          "usually": "outcome logged the same day",
+          "sometimes": "voicemails logged the next morning"
+        }
+      ]
+    },
+    {
+      "id": "S13",
+      "name": "Sync the CRM",
+      "kind": "task",
+      "trigger": {
+        "type": "event",
+        "detail": ""
+      },
+      "work": "mechanical",
+      "owner": "executor",
+      "raci": {
+        "r": "executor",
+        "a": "rep",
+        "c": [],
+        "i": []
+      },
+      "systems": [
+        "crm",
+        "workspace"
+      ],
+      "writes": [
+        "crm"
+      ],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 200,
+      "minutes_per_item": 0.5,
+      "cold_rate": 0.1,
+      "automation": {
+        "tier": "batch",
+        "level": "draft",
+        "human_reads": "sync/to-crm.csv pilot rows",
+        "approval_point": "rep approves the pilot rows, then the batch",
+        "off_switch": "no approved plan, no run"
+      },
+      "readiness": {
+        "visible_today": [
+          "record ids on every row",
+          "field mapping table"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [
+        {
+          "to": "S14",
+          "when": "Fridays"
+        }
+      ],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "medium",
+        "left_manual": "medium"
+      },
+      "irreversible": false
+    },
+    {
+      "id": "S14",
+      "name": "Weekly funnel review",
+      "kind": "task",
+      "trigger": {
+        "type": "clock",
+        "detail": "Fridays"
+      },
+      "work": "judgment",
+      "owner": "rep",
+      "raci": {
+        "r": "rep",
+        "a": "rep",
+        "c": [],
+        "i": [
+          "ae"
+        ]
+      },
+      "systems": [
+        "workspace"
+      ],
+      "writes": [],
+      "inputs": [],
+      "outputs": [],
+      "volume_per_week": 1,
+      "minutes_per_item": 30,
+      "cold_rate": 0,
+      "automation": {
+        "tier": "manual",
+        "level": "none",
+        "human_reads": "funnel/report.md",
+        "approval_point": "",
+        "off_switch": ""
+      },
+      "readiness": {
+        "visible_today": [
+          "activity log",
+          "enrollments"
+        ],
+        "missing": [],
+        "cleanup": []
+      },
+      "next": [],
+      "waste": "none",
+      "risk": {
+        "automated_wrong": "low",
+        "left_manual": "low"
+      },
+      "irreversible": false
+    }
+  ]
+}

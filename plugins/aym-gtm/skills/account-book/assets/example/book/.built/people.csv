@@ -1,0 +1,18 @@
+person_id,account_id,first_name,last_name,title,email,email_status,email_score,phone,linkedin_url,country,timezone,status,last_touch_date,sequence,tags,notes,crm_id,source
+p-bea1fe96,A09,Corinne,Vasquez,Director of IT,corinne.vasquez@riverbend-parts.example,verified,92,+1-312-555-0116,https://linkedin.example/in/corinne-vasquez,US,,active,,,,,,researched
+p01,A01,Dana,Okafor,Chief Financial Officer,dana.okafor@northpine-logistics.example,verified,92,+1-312-555-0151,https://linkedin.example/in/dana-okafor,US,,active,,,,,C-P01,researched;people
+p02,A01,Marcus,Lindqvist,Corporate Controller,marcus.lindqvist@northpine-logistics.example,verified,92,+1-312-555-0102,https://linkedin.example/in/marcus-lindqvist,US,,active,2026-08-14,,,,C-P02,people
+p03,A01,Priya,Raman,Director of IT,priya.raman@northpine-logistics.example,risky,70,,https://linkedin.example/in/priya-raman,US,,active,,,,,C-P03,people
+p04,A02,Hollis,Brandt,"Vice President, Finance",hollis.brandt@brightmill-mfg.example,verified,97,+1-617-555-0104,https://linkedin.example/in/hollis-brandt,US,,active,,,,,C-P04,researched;people
+p05,A02,Tessa,Moreau,Accounts Payable Manager,tessa.moreau@brightmill.example,catch_all,85,,https://linkedin.example/in/tessa-moreau,US,,active,,,,,C-P05,people
+p06,A02,Jonah,Pike,Sales Representative,jonah.pike@brightmill.example,verified,92,,https://linkedin.example/in/jonah-pike,US,,active,,,,,C-P06,people
+p07,A03,Grace,Ilunga,CFO,grace.ilunga@coastal-ledger.example,verified,92,,https://linkedin.example/in/grace-ilunga,US,,active,,seq-intro,,,C-P07,people
+p08,A04,Owen,Tremblay,Controller,owen.tremblay@quarrypeak-health.example,verified,92,,https://linkedin.example/in/owen-tremblay,CA,,active,,,,,C-P08,people
+p09,A05,Lena,Fischer,VP of Finance,lena.fischer@tallgrass-soft.example,verified,92,,https://linkedin.example/in/lena-fischer,US,,active,,,,,C-P09,people
+p10,A07,Rafael,Duarte,Chief Financial Officer,rafael.duarte@ironleaf.example,verified,92,,https://linkedin.example/in/rafael-duarte,CA,,active,,,past_reply,,C-P10,people
+p11,A07,Mei,Sato,Procurement Lead,mei.sato@ironleaf.example,verified,,,https://linkedin.example/in/mei-sato,CA,,active,,,,,C-P11,people
+p12,A08,Ezra,Whitfield,Controller,ezra.whitfield@maplecrest.example,verified,92,+1-617-555-0112,https://linkedin.example/in/ezra-whitfield,US,,active,,,,,C-P12,researched;people
+p13,A08,Nadia,Kowalski,Head of IT,nadia.kowalski@maplecrest.example,verified,92,+1-617-555-0113,https://linkedin.example/in/nadia-kowalski,US,,active,,,,,C-P13,people
+p14,A09,Simone,Achebe,VP Finance,simone.achebe@riverbend-parts.example,verified,92,+1-312-555-0114,https://linkedin.example/in/simone-achebe,US,,active,,,,,C-P14,people
+p15,A09,Theo,Nakamura,Accounts Payable Lead,theo.nakamura@gmail.example,verified,92,,https://linkedin.example/in/theo-nakamura,US,,active,,,,,C-P15,people
+p16,A06,Ivy,Castellano,CFO,ivy.castellano@spendwise.example,verified,92,,https://linkedin.example/in/ivy-castellano,US,,active,,,,,C-P16,people

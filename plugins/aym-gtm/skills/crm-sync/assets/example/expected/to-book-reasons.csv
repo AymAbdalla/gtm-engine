@@ -1,0 +1,8 @@
+person_id,crm_id,field,book_value,new_value,reason
+p02,C-P02,phone,+1-312-555-0102,+1-312-555-0152,changed in the CRM since the last sync
+p03,C-P03,tags,,bounced,"the CRM marks the address as bounced (email_status invalid); the address is kept, the send gate drops it"
+,C-P11,*new person*,,Mei Sato,"in the CRM, not in the book"
+p08,C-P08,tags,,bounced,"bounce logged; the address is kept, the send gate drops it"
+p07,,status,active,do_not_contact,opt_out logged 2026-10-18
+p07,,tags,,opted_out,opt_out logged 2026-10-18
+p04,C-P04,tags,,bounced,"bounce in the CRM export; the address is kept, the send gate drops it"

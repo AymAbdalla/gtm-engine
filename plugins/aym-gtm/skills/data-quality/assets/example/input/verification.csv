@@ -1,0 +1,11 @@
+person_id,email,channel,verdict,score,checked_date
+P01,dana.whitfield@brightmill.example,email,valid,97,2026-10-19
+P01,,phone,valid,90,2026-10-19
+P02,marco.reyes@brightmill-mfg.example,email,valid,90,2026-10-19
+P02,marco.reyes@brightmill-mfg.example,email,invalid,40,2026-10-19
+P04,tom.becker@brightmill.example,email,valid,85,2026-10-19
+P11,nadia.rahman@coastal-ledger.example,email,valid,91,2026-10-19
+P13,ines.duarte@coastal-ledger.example,email,catch_all,70,2026-10-19
+P16,ellis.grant@quarrylane-health.example,email,valid,72,2026-10-19
+P32,glen.hart@old-harborview.example,email,valid,95,2026-10-19
+,sam.okafor@northpine-logistics.example,email,valid,93,2026-10-19

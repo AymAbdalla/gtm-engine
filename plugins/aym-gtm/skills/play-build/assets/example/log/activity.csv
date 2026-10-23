@@ -1,0 +1,13 @@
+activity_id,timestamp,person_id,account_id,channel,direction,sequence,step,play_id,angle,opener,outcome,notes,source
+a001,2026-01-12T10:00:00-05:00,p08,A04,email,out,,,,,,sent,,import
+a002,2026-02-16T10:00:00-05:00,p08,A04,call,out,,,,,,connected,,import
+a003,2026-04-02T10:00:00-04:00,p08,A04,email,in,,,,,,replied,Asked to talk after their audit,import
+a004,2026-04-15T09:00:00-04:00,p10,A05,email,out,,,,,,sent,,import
+a005,2026-05-14T09:00:00-04:00,p10,A05,email,out,,,,,,sent,,import
+a006,2026-06-12T09:00:00-04:00,p10,A05,call,out,,,,,,no_answer,,import
+a007,2026-07-01T09:00:00-04:00,p10,A05,email,out,,,,,,sent,,import
+a008,2026-05-20T11:00:00-04:00,p15,A09,email,out,,,,,,sent,,import
+a009,2026-06-15T11:00:00-04:00,p15,A09,call,out,,,,,,connected,,import
+a010,2026-07-10T11:00:00-04:00,p15,A09,email,out,,,,,,sent,,import
+a011,2026-10-14T15:00:00-05:00,p02,A01,call,out,,,,,,voicemail,,manual
+a012,2026-12-01T09:00:00-05:00,p17,A10,email,out,,,,,,sent,typed with the wrong year,manual

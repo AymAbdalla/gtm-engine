@@ -1,0 +1,12 @@
+activity_id,timestamp,person_id,account_id,channel,direction,sequence,step,play_id,angle,opener,outcome,notes,source
+a001,2026-10-13T09:12:00-04:00,p02,A01,email,out,seq-trigger-finance,1,signal-2026-10,trigger,,sent,,manual
+a002,2026-10-14T14:20:00-04:00,p02,A01,call,out,seq-trigger-finance,2,signal-2026-10,,,no_answer,,manual
+a003,2026-10-13T09:20:00-04:00,p09,A04,email,out,seq-trigger-finance,1,signal-2026-10,trigger,,sent,,manual
+a004,2026-10-15T11:02:00-04:00,p09,A04,email,in,seq-trigger-finance,,signal-2026-10,,,replied,Asked for a call next week,manual
+a005,2026-10-14T09:30:00-04:00,p10,A04,email,out,seq-trigger-finance,1,signal-2026-10,trigger,,sent,,manual
+a006,2026-10-14T10:00:00-04:00,p12,A07,email,out,seq-trigger-finance,1,signal-2026-10,trigger,,sent,,manual
+a007,2026-10-19T09:05:00-04:00,p04,A02,email,out,seq-trigger-finance,1,signal-2026-10,trigger,,sent,,manual
+a008,2026-11-30T10:00:00-05:00,p01,A01,call,out,,,,,,connected,Typed with the wrong year,manual
+a009,2026-10-20T09:40:00-04:00,p02,A01,email,out,seq-trigger-finance,3,signal-2026-10,trigger,,sent,,manual
+a010,2026-10-20T14:05:00-04:00,p04,A02,call,out,seq-trigger-finance,2,signal-2026-10,,,connected,they owe: intro to their IT director by 2026-10-23; we owe: send the approval checklist by 2026-10-21,manual
+a011,2026-10-20T14:12:00-04:00,p01,A01,call,out,,,,,,no_answer,,manual

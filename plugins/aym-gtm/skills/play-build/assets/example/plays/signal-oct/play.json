@@ -1,0 +1,18 @@
+{
+  "id": "signal-oct",
+  "type": "signal",
+  "name": "October signal play",
+  "trigger": "accounts signal-score marked playable",
+  "sequence": "seq-trigger-finance",
+  "start": "2026-10-21",
+  "end": "2026-11-13",
+  "channel": "email",
+  "daily_cap": 2,
+  "personas": [],
+  "stop_rules": [
+    "any reply",
+    "meeting booked",
+    "not interested",
+    "reply from anyone at the account stops the account"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "_note": "Made-up example tests for the fictional seller Ledgerline. Written before any results came in.",
+  "tests": [
+    {
+      "id": "opener-oct",
+      "kind": "opener",
+      "hypothesis": "Opening with the month-end question (B) turns more connects into conversations than the permission opener (A) or the referral opener (C).",
+      "variable": "opener",
+      "arms": [
+        "A",
+        "B",
+        "C"
+      ],
+      "metric": "conversations per connect",
+      "min_per_arm": 20,
+      "registered": "2026-09-18",
+      "start": "2026-09-21"
+    },
+    {
+      "id": "angle-oct",
+      "kind": "angle",
+      "hypothesis": "A dated trigger in the first email earns more replies than a problem question.",
+      "variable": "angle",
+      "arms": [
+        "trigger",
+        "problem_question"
+      ],
+      "metric": "people who replied per first touch",
+      "min_per_arm": 30,
+      "registered": "2026-09-18",
+      "start": "2026-09-21"
+    }
+  ]
+}

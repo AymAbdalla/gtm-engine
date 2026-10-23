@@ -1,0 +1,11 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes
+A01,Northpine Logistics,northpine-logistics.example,,640,logistics,US,P1,,active,you,C-A01,
+A02,Brightmill Manufacturing,brightmill.example,brightmill-mfg.example,420,manufacturing,US,P2,,active,you,C-A02,
+A03,Coastal Ledger Partners,coastal-ledger.example,,310,professional services,US,P3,,live_deal,you,C-A03,
+A04,Quarry Peak Health,quarrypeak-health.example,,880,healthcare services,CA,P2,parent_decides,active,you,C-A04,
+A05,Tallgrass Software,tallgrass-soft.example,,150,software,US,P3,,active,you,C-A05,
+A06,Spendwise Labs,spendwise.example,,300,software,US,,competitor,active,you,C-A06,
+A07,Ironleaf Freight,ironleaf.example,,1200,logistics,CA,P2,,active,you,C-A07,
+A08,Maplecrest Clinics,maplecrest.example,,520,healthcare services,US,P3,,active,you,C-A08,
+A09,Riverbend Components,riverbend-parts.example,,760,manufacturing,US,P3,,active,you,C-A09,
+A10,Ashford Advisory,ashford-advisory.example,,270,professional services,US,,,active,you,C-A10,

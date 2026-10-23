@@ -1,0 +1,13 @@
+play_id,person_id,account_id,seat,sequence,sequence_start,variables,rank,approved,drop_reason
+signal-oct,p04,A02,"decision_maker (signal seat: Dana Whitfield, Chief Financial Officer (the named new leader))",seq-trigger-finance,2026-10-21,"{""company"": ""Brightmill Manufacturing"", ""first_name"": ""Dana"", ""source_date"": ""2026-09-28"", ""source_url"": ""https://news.example/brightmill-new-cfo"", ""trigger_fact"": ""Brightmill Manufacturing named you Chief Financial Officer""}",1,,
+signal-oct,p01,A01,decision_maker (signal seat: the likely manager of the open role),seq-trigger-finance,2026-10-21,"{""company"": ""Northpine Logistics"", ""first_name"": ""Sam"", ""source_date"": ""2026-10-05"", ""source_url"": ""https://jobs.example/northpine/ap-manager"", ""trigger_fact"": ""Northpine Logistics posted an opening for an Accounts Payable Manager""}",2,,
+signal-oct,p19,A10,added by you: AP lead asked for a demo at a webinar,seq-trigger-finance,2026-10-22,"{""company"": ""Quillstone Health"", ""first_name"": ""Ruth"", ""trigger_fact"": """"}",3,,
+signal-oct,p17,A10,decision_maker (signal seat: decision maker),seq-trigger-finance,2026-10-23,"{""company"": ""Quillstone Health"", ""first_name"": ""Elena"", ""trigger_fact"": """"}",4,,
+signal-oct,p02,A01,,seq-trigger-finance,,,,,"touched 2026-10-14, within 14 days"
+signal-oct,p03,A01,,seq-trigger-finance,,,,,account cap: 1 per account
+signal-oct,p05,A02,,seq-trigger-finance,,,,,not the seat this signal points to
+signal-oct,p06,A02,,seq-trigger-finance,,,,,email gate: catch-all domain
+signal-oct,p07,A03,,seq-trigger-finance,,,,,account status live_deal
+signal-oct,p13,A07,,seq-trigger-finance,,,,,owned by jordan
+signal-oct,p18,A10,,seq-trigger-finance,,,,,status do_not_contact
+signal-oct,p20,A01,,seq-trigger-finance,,,,,account cap: 1 per account

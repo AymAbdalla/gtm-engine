@@ -1,0 +1,4 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes
+A01,Northpine Logistics,northpine-logistics.example,,640,logistics,US,P1,,active,you,C-A01,
+A02,Brightmill Manufacturing,brightmill.example,,420,manufacturing,US,P2,,active,you,C-A02,
+A03,Coastal Ledger Partners,coastal-ledger.example,,880,professional services,US,P2,,active,you,C-A03,

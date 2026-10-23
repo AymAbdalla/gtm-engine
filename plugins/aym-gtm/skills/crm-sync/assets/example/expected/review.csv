@@ -1,0 +1,10 @@
+review_id,object,record_id,issue,detail
+R001,person,C-P04,CRM time ignored,time 2026-11-30T12:00:00-05:00 is after today
+R002,person,C-P99,ambiguous match,"2 book people have this name at this account: book people p09, p10"
+R003,person,C-P12,"new in CRM, not brought in",account not in the book
+R004,person,C-P06,closed or removed in the CRM,book person p06 was in the last export and is missing now; the outcome is not in the export. Nothing was deleted.
+R005,person,p09,not created in the CRM,this person may already be in the CRM under an ambiguous match; settle that first
+R006,person,p10,not created in the CRM,this person may already be in the CRM under an ambiguous match; settle that first
+R007,activity,a007,bad time in log/activity.csv,time 2026-12-01T09:00:00-05:00 is after today
+R008,activity,a006,value not on the list,outcome 'accepted'. New values are never created.
+R009,activity,CA-11,value not on the list,outcome 'left_voicemail'. New values are never created.

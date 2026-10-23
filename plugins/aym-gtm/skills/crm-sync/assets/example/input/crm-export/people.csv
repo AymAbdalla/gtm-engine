@@ -1,0 +1,10 @@
+crm_id,first_name,last_name,title,email,email_status,phone,linkedin_url,country,status,account_name,account_domain,updated_at
+C-P01,Dana,Okafor,CFO,dana.okafor@northpine-logistics.example,verified,+1-312-555-0101,https://linkedin.example/in/dana-okafor,US,active,Northpine Logistics,northpine-logistics.example,2026-10-12T09:00:00-04:00
+C-P02,Marcus,Lindqvist,Controller,marcus.lindqvist@northpine-logistics.example,verified,+1-312-555-0152,https://linkedin.example/in/marcus-lindqvist,US,active,Northpine Logistics,northpine-logistics.example,2026-10-17T16:00:00-04:00
+C-P03,Priya,Raman,IT Director,priya.raman@northpine-logistics.example,invalid,+1-312-555-0103,https://linkedin.example/in/priya-raman,US,active,Northpine Logistics,northpine-logistics.example,2026-10-15T09:00:00-05:00
+C-P04,Hollis,Brandt,"Vice President, Finance",hollis.brandt@brightmill.example,verified,+1-617-555-0199,https://linkedin.example/in/hollis-brandt,US,active,Brightmill Manufacturing,brightmill.example,2026-11-30T12:00:00-05:00
+C-P05,Tessa,Moreau,Accounts Payable Manager,,verified,+1-617-555-0105,https://linkedin.example/in/tessa-moreau,US,active,Brightmill Manufacturing,brightmill.example,2026-10-12T09:00:00-04:00
+C-P08,Owen,Patel,Procurement Lead,owen.patel@northpine-logistics.example,verified,+1-312-555-0108,https://linkedin.example/in/owen-patel,US,active,Northpine Logistics,northpine-logistics.example,2026-10-12T09:00:00-04:00
+C-P99,Alex,Rivera,Controller,arivera@brightmill.example,verified,,https://linkedin.example/in/alex-rivera,US,active,Brightmill Manufacturing,brightmill.example,2026-10-12T09:00:00-04:00
+C-P11,Mei,Sato,AP Lead,mei.sato@coastal-ledger.example,verified,+1-206-555-0111,https://linkedin.example/in/mei-sato,US,active,Coastal Ledger Partners,coastal-ledger.example,2026-10-12T09:00:00-04:00
+C-P12,Rafael,Duarte,CFO,rafael.duarte@ironleaf.example,verified,+1-512-555-0112,https://linkedin.example/in/rafael-duarte,US,active,Ironleaf Freight,ironleaf.example,2026-10-12T09:00:00-04:00

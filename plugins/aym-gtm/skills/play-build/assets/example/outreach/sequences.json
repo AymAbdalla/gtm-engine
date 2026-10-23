@@ -1,0 +1,122 @@
+{
+  "_note": "Made-up example sequences for the fictional seller Ledgerline.",
+  "sequences": [
+    {
+      "id": "seq-trigger-finance",
+      "version": 1,
+      "persona": "cfo",
+      "who": "Finance buyers at accounts with a playable signal",
+      "angle": "trigger",
+      "variables": {
+        "first_name": {
+          "description": "Prospect first name",
+          "example": "Dana"
+        },
+        "company": {
+          "description": "Account name",
+          "example": "Brightmill"
+        },
+        "trigger_fact": {
+          "description": "One sourced, dated fact",
+          "example": "you named a new CFO"
+        }
+      },
+      "steps": [
+        {
+          "day": 1,
+          "order": 1,
+          "channel": "email",
+          "thread": "new",
+          "subject": "{{company}} and month end",
+          "body": "Hi {{first_name}}, I saw {{trigger_fact}}. How is month end going this quarter?"
+        },
+        {
+          "day": 2,
+          "order": 1,
+          "channel": "call",
+          "thread": "new",
+          "subject": "",
+          "body": "Call reason: {{trigger_fact}}."
+        },
+        {
+          "day": 4,
+          "order": 1,
+          "channel": "email",
+          "thread": "reply",
+          "subject": "",
+          "body": "{{first_name}}, is approval speed on your list this quarter?"
+        },
+        {
+          "day": 6,
+          "order": 1,
+          "channel": "linkedin",
+          "thread": "new",
+          "subject": "",
+          "body": "Hi {{first_name}}, I follow finance teams like yours at {{company}}. Open to connect?"
+        }
+      ],
+      "stop_rules": [
+        "any reply",
+        "meeting booked",
+        "not interested",
+        "wrong person",
+        "opted out",
+        "email bounced",
+        "reply from anyone at the same account stops every sequence there"
+      ]
+    },
+    {
+      "id": "seq-winback",
+      "version": 1,
+      "persona": "cfo",
+      "who": "Past conversations that went quiet",
+      "angle": "gap",
+      "variables": {
+        "first_name": {
+          "description": "Prospect first name",
+          "example": "Rafael"
+        },
+        "company": {
+          "description": "Account name",
+          "example": "Ironleaf"
+        },
+        "last_topic": {
+          "description": "What you last spoke about, from your notes",
+          "example": "waiting until after the audit"
+        }
+      },
+      "steps": [
+        {
+          "day": 1,
+          "order": 1,
+          "channel": "email",
+          "thread": "new",
+          "subject": "Picking back up",
+          "body": "Hi {{first_name}}, it has been a while since we spoke about {{last_topic}}. Is it worth a fresh look?"
+        },
+        {
+          "day": 4,
+          "order": 1,
+          "channel": "call",
+          "thread": "new",
+          "subject": "",
+          "body": "Call reason: follow up on {{last_topic}}."
+        },
+        {
+          "day": 8,
+          "order": 1,
+          "channel": "email",
+          "thread": "reply",
+          "subject": "",
+          "body": "{{first_name}}, should I close the loop on this for now?"
+        }
+      ],
+      "stop_rules": [
+        "any reply, including an out-of-office, pauses the sequence",
+        "a complaint stops it",
+        "meeting booked",
+        "not interested"
+      ]
+    }
+  ]
+}

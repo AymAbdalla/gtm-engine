@@ -1,0 +1,40 @@
+person_id,account_id,first_name,last_name,title,email,email_status,email_score,phone,linkedin_url,country,timezone,status,last_touch_date,sequence,tags,notes,crm_id,source
+P01,A01,Dana,Whitfield,CFO,dana.whitfield@brightmill.example,verified,95,+1-312-555-0142,https://linkedin.example/in/dana-whitfield,US,America/Chicago,active,,,,,C-2001,crm
+P02,A01,Marco,Reyes,Controller,marco.reyes@brightmill-mfg.example,verified,90,+1-312-555-0155,https://linkedin.example/in/marco-reyes,US,America/Chicago,active,2026-06-02,seq-controller-a,,,C-2002,crm
+P03,A01,Priya,Anand,Accounts Payable Manager,priya.anand@brightmill.example,verified,88,+1-312-555-0100,https://linkedin.example/in/priya-anand,US,America/Chicago,active,,,,,C-2003,crm
+P04,A01,Tom,Becker,IT Director,tom.becker@brightmill.example,verified,85,+1-312-555-0161,https://linkedin.example/in/tom-becker,US,America/Chicago,active,,,,,C-2004,crm
+P05,A01,Grace,Liu,Procurement Lead,grace.liu@brightmill.example,verified,86,+1-312-555-0168,https://linkedin.example/in/grace-liu,US,America/Chicago,active,2026-08-01,,this_week,,C-2005,crm
+P06,A02,Sam,Okafor,VP Finance,sam.okafor@northpine-logistics.example,verified,92,+1-415-555-0123,https://linkedin.example/in/sam-okafor,US,America/Los_Angeles,active,2026-09-02,seq-vp-a,dnc_phone;replied,,C-2006,crm
+P07,A02,Lena,Fischer,Founder,lena.fischer@northpine-logistics.example,verified,90,,https://linkedin.example/in/lena-fischer,US,America/Los_Angeles,active,,,,,C-2007,crm
+P08,A02,Jordan,Hale,Sales Representative,jordan.hale@northpine-logistics.example,verified,90,+1-415-555-0131,,US,America/Los_Angeles,active,,,,,C-2008,crm
+P09,A02,Riley,Moss,Controller,riley.moss@freemail.example,unknown,,,https://linkedin.example/in/riley-moss,US,America/Los_Angeles,active,,,,,C-2009,list
+P10,A02,Sam,Okafor,VP Finance,sam.okafor@northpine-logistics.example,verified,92,,,US,America/Los_Angeles,active,,,,,C-2010,list
+P11,A03,Nadia,Rahman,Chief Financial Officer,nadia.rahman@coastal-ledger.example,verified,91,+1-416-555-0177,https://linkedin.example/in/nadia-rahman,CA,America/Toronto,active,2026-09-28,seq-cfo-a,,,C-2011,crm
+P12,A03,Owen,Clarke,"Finance Director, EMEA",owen.clarke@coastal-ledger.example,verified,90,+1-416-555-0178,https://linkedin.example/in/owen-clarke,CA,America/Toronto,active,,,,,C-2012,crm
+P13,A03,Ines,Duarte,"VP Finance, Europe",ines.duarte@coastal-ledger.example,verified,84,+1-416-555-0179,https://linkedin.example/in/ines-duarte,CA,America/Toronto,active,2026-09-10,,,,C-2013,crm
+P14,A03,Victor,Lam,Accounts Payable Lead,victor.lam@coastal-ledger.example,invalid,10,+1-800-555-0190,https://linkedin.example/in/victor-lam,CA,America/Toronto,active,,,,,C-2014,crm
+P15,A03,Hana,Sato,Controller,hana.sato@coastal-ledger.example,verified,90,,https://linkedin.example/in/hana-sato,GB,Europe/London,active,,,,,C-2015,crm
+P16,A04,Ellis,Grant,Head of Finance,ellis.grant@quarrylane-health.example,verified,89,+44 20 5550 0142,https://linkedin.example/in/ellis-grant,US,America/New_York,active,,,,,C-2016,crm
+P17,A04,Maya,Brooks,Controller,maya.brooks@quarrylane-health.example,verified,88,+1-212-555-0119,https://linkedin.example/in/jfoster-cpa,US,America/New_York,active,,,,,C-2017,crm
+P18,A04,Theo,Park,,theo.park@quarrylane-health.example,verified,87,+1-212-555-0120,https://linkedin.example/in/theo-park,US,America/New_York,active,,,,,C-2018,crm
+P19,A04,Ruth,Adeyemi,CFO,ruth.adeyemi@quarrylane-health.example,verified,93,+1-212-555-0121,https://linkedin.example/in/ruth-adeyemi,US,America/New_York,do_not_contact,2026-07-14,seq-cfo-a,,,C-2019,crm
+P20,A04,Colin,Wade,IT Manager,colin.wade@quarrylane-health.example,verified,85,+1-212-555-0122,https://linkedin.example/in/colin-wade,US,America/New_York,active,2026-09-15,,,Asked us not to contact him again. Remove me from your lists.,C-2020,crm
+P21,A04,Ava,Kim,Accounts Payable Specialist,ava.kim@quarrylane-health.example,verified,86,,https://linkedin.example/in/ava-kim,US,America/New_York,active,2026-10-01,seq-ap-a,bounced,,C-2021,crm
+P22,A04,Ben,Cho,Procurement Manager,ben.cho@quarrylane-health.example,verified,83,+1-212-555-0124,https://linkedin.example/in/ben-cho,US,America/New_York,active,,,vendor_no_record,,C-2022,crm
+P23,A05,Kara,Nilsen,CFO,kara.nilsen@tallgrass.example,verified,90,+1-646-555-0131,https://linkedin.example/in/kara-nilsen,US,America/New_York,active,,,,,C-2023,crm
+P24,A06,Luis,Ortega,VP Finance,luis.ortega@meridian-spend.example,verified,90,+1-646-555-0132,https://linkedin.example/in/luis-ortega,US,America/New_York,active,,,,,C-2024,crm
+P25,A07,June,Park,Director of Finance,june.park@riverbend-schools.example,verified,90,+1-646-555-0133,https://linkedin.example/in/june-park,US,America/New_York,active,,,,,C-2025,crm
+P26,A09,Felix,Braun,Controller,felix.braun@brightmill.example,verified,88,+1-312-555-0170,https://linkedin.example/in/felix-braun,US,America/Chicago,active,,,,,C-2026,crm
+P27,A10,Mia,Torres,Accounts Payable Manager,mia.torres@northpine-freight.example,verified,88,+1-415-555-0140,https://linkedin.example/in/mia-torres,US,America/Los_Angeles,left,2026-05-11,,,,C-2027,crm
+P28,A11,Noah,Fields,CFO,noah.fields@saltmarsh.example,verified,90,+1-617-555-0150,https://linkedin.example/in/noah-fields,US,America/New_York,active,,,,,C-2028,crm
+P29,A12,Iris,Chen,CFO,iris.chen@harborview-clinics.example,verified,90,+1-503-555-0160,https://linkedin.example/in/iris-chen,US,America/Los_Angeles,active,,,,,C-2029,crm
+P30,A12,Paul,Novak,Controller,paul.novak@harborview-clinics.example,verified,89,+1-503-555-0161,https://linkedin.example/in/paul-novak,US,America/Los_Angeles,active,,,,,C-2030,crm
+P31,A12,Rosa,Diaz,Accounts Payable Manager,rosa.diaz@harborview-clinics.example,verified,88,+1-503-555-0162,https://linkedin.example/in/rosa-diaz,US,America/Los_Angeles,active,,,,,C-2031,crm
+P32,A12,Glen,Hart,IT Director,glen.hart@harborview.example,verified,87,+1-503-555-0163,https://linkedin.example/in/glen-hart,US,America/Los_Angeles,active,,,,,C-2032,crm
+P33,A02,Zoe,Grant,Marketing Manager,zoe.grant@northpine-logistics.example,verified,90,+1-415-555-0134,https://linkedin.example/in/zoe-grant,US,America/Los_Angeles,active,,,,,C-2033,crm
+P34,A04,Ray,Bell,Finance Intern,ray.bell@quarrylane-health.example,verified,90,+1-212-555-0125,https://linkedin.example/in/ray-bell,US,America/New_York,active,,,,,C-2034,crm
+P35,A99,Omar,Haddad,Controller,omar.haddad@westfield-parts.example,verified,90,+1-313-555-0180,https://linkedin.example/in/omar-haddad,US,America/Detroit,active,,,,,C-2035,list
+P36,A01,Dana,Whitfield,CFO,dana.w@brightmill.example,unknown,,,,US,America/Chicago,active,,,,,C-2036,list
+P37,A04,Lucy,Stone,Advisor,lucy.stone@quarrylane-health.example,verified,90,+1-212-555-0126,https://linkedin.example/in/lucy-stone,US,America/New_York,active,,,,,C-2037,crm
+P38,A02,Erin,Walsh,Controller,erin.walsh@northpine-logistics.example,catch_all,60,555-01,https://linkedin.example/in/erin-walsh,US,America/Los_Angeles,active,2024-01-15,,,,C-2038,crm
+P39,A02,Wes,Ford,AP Manager,wes.ford@northpine-logistics.example,verified,90,+1-415-555-0135,https://linkedin.example/in/wes-ford,US,America/Los_Angeles,booked,2026-10-12,,,,C-2039,crm

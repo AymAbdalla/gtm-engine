@@ -1,0 +1,11 @@
+signal_id,account_name,domain,type,event_date,summary,source_url,person_name,person_title
+S010,Brightmill Foods,brightmill.example,new_leader,2026-09-28,Named Dana Whitfield as Chief Financial Officer,https://news.example/brightmill-new-cfo,Dana Whitfield,Chief Financial Officer
+S011,Coastal Ledger Group,coastal-ledger.example,leader_gap,2026-05-15,"Announced that its VP Finance, Marcus Lee, is leaving the company",https://news.example/coastal-ledger-vp-finance,Marcus Lee,VP Finance
+S012,Silverbirch Clinics,silverbirch.example,funding,2026-06-30,Closed a growth funding round to open four new clinics,https://news.example/silverbirch-funding,,
+S014,Fernhollow Packaging,fernhollow.example,layoffs,2026-10-01,Announced a reduction of 40 roles at one plant,https://news.example/fernhollow-plant,,
+S015,Quillstone Software,quillstone.example,new_leader,2026-10-12,Named Priya Natarajan as VP Finance,https://news.example/quillstone-vp-finance,Priya Natarajan,VP Finance
+S016,Tallgrass Freight,tallgrass-freight.example,funding,2026-09-10,Announced an acquisition of a regional carrier,https://news.example/tallgrass-acquisition,,
+S010,Brightmill Foods,brightmill.example,new_leader,2026-09-28,Named Dana Whitfield as Chief Financial Officer,https://news.example/brightmill-new-cfo,Dana Whitfield,Chief Financial Officer
+S018,Northpine Logistics,northpine-logistics.example,growth,2026-10-02,Opened a new cross-dock site,,,
+S019,Ironleaf Manufacturing,ironleaf.example,award,2026-10-03,Won a regional safety award,https://news.example/ironleaf-award,,
+S020,Meridian Arc Consulting,meridianarc.example,growth,2026-09-30,Opened a new office,https://news.example/meridian-office,,

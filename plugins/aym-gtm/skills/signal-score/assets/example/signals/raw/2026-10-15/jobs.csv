@@ -1,0 +1,6 @@
+signal_id,account_name,domain,type,event_date,summary,source_url,person_name,person_title
+S001,Northpine Logistics,northpine.example,hiring,2026-10-05,Posted an opening for an Accounts Payable Manager,https://jobs.example/northpine/ap-manager,,
+S002,Brightmill Foods,brightmill.example,hiring,2026-08-01,Posted an opening for a Senior Financial Systems Analyst,https://jobs.example/brightmill/fin-systems,,
+S003,Lakeview Dental Group,lakeview-dental.example,hiring,2026-10-10,Posted an opening for a Controller,https://jobs.example/lakeview/controller,,
+S004,"Ironleaf Manufacturing, Inc.",,hiring,2026-09-20,Posted an opening for a Procurement Manager,https://jobs.example/ironleaf/procurement,,
+S013,Ridgeway Health Partners,ridgewayhealth.example,hiring,2026-03-01,Posted an opening for an AP Specialist,https://jobs.example/ridgeway/ap-specialist,,

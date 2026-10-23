@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "C-P01": {
+      "phone": "+1-312-555-0101",
+      "title": "CFO"
+    },
+    "C-P02": {
+      "phone": "+1-312-555-0102"
+    },
+    "C-P03": {
+      "title": "Director of IT"
+    },
+    "C-P04": {
+      "phone": "+1-617-555-0104"
+    },
+    "C-P05": {
+      "email": "tessa.moreau@brightmill.example"
+    }
+  },
+  "datasets": {
+    "people": {
+      "hash": "previous",
+      "rows": 9
+    }
+  },
+  "export_ids": [
+    "C-P01",
+    "C-P02",
+    "C-P03",
+    "C-P04",
+    "C-P05",
+    "C-P06",
+    "C-P08"
+  ],
+  "last_run": "2026-10-15",
+  "pending_bounces": {
+    "p03": {
+      "crm_id": "C-P03",
+      "email": "priya.raman@northpine-logistics.example",
+      "since": "2026-10-10"
+    }
+  },
+  "watermark": "2026-10-15T00:00:00+00:00"
+}

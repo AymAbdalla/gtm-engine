@@ -1,0 +1,12 @@
+row_id,action,object,record_id,field,current_value,new_value,reason,evidence,pilot
+S001,update,person,C-P01,title,CFO,Chief Financial Officer,changed in the book since the last sync,,yes
+S002,update,person,C-P03,title,IT Director,Head of IT,both sides changed; the book change is newer,book 2026-10-18T10:00:00-04:00 > CRM 2026-10-15T09:00:00-05:00,yes
+S003,update,person,C-P04,email_status,verified,invalid,bounce in the CRM export,hollis.brandt@brightmill.example,yes
+S004,update,person,C-P05,email,,tessa.moreau@brightmill.example,CRM field is blank; a blank never clears the book,,
+S005,update,person,C-P08,email_status,verified,invalid,bounce logged,a005,
+S006,create,person,p07,*record*,,Sam Whitlock <sam.whitlock@coastal-ledger.example>; status=do_not_contact,"in the book, not in the CRM; opt_out logged 2026-10-18",,
+S007,log,activity,a002,*activity*,,email out sent 2026-10-14 person p01,"in the log, not yet in the CRM",,
+S008,log,activity,a003,*activity*,,call out connected 2026-10-16 person p02,"in the log, not yet in the CRM",,
+S009,log,activity,a004,*activity*,,call in interested 2026-10-16 person p02,"in the log, not yet in the CRM",,
+S010,log,activity,a005,*activity*,,email out bounced 2026-10-19 person p08,"in the log, not yet in the CRM",,
+S011,log,activity,a008,*activity*,,email in opt_out 2026-10-18 person p07,"in the log, not yet in the CRM",,

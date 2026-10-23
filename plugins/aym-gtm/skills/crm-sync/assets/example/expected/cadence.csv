@@ -1,0 +1,4 @@
+person_id,account_id,sequence,last_step,last_touch,state,reason,next_due
+p01,A01,seq-trigger-finance,1,2026-10-14,stopped,reply at the account from p02,
+p02,A01,seq-trigger-finance,2,2026-10-16,replied,interested 2026-10-16,
+p08,A01,seq-trigger-finance,1,2026-10-19,stopped,bounced 2026-10-19,

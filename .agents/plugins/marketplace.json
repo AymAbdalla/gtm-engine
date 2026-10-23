@@ -1,0 +1,20 @@
+{
+  "name": "gtm-engine",
+  "interface": {
+    "displayName": "GTM Engine"
+  },
+  "plugins": [
+    {
+      "name": "aym-gtm",
+      "source": {
+        "source": "local",
+        "path": "./plugins/aym-gtm"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

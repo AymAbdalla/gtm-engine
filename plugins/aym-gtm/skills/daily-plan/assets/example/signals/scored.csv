@@ -1,0 +1,3 @@
+account_id,name,score,top_type,playable,why_not,why_now,source_url,event_date,seat,live_signals,signals,check
+A02,Brightmill Manufacturing,7.8,new_leader,yes,,Named a new Chief Financial Officer (source dated 2026-09-28).,https://news.example/brightmill/new-cfo,2026-09-28,the named new leader,2,S003;S002,
+A01,Northpine Logistics,4.0,hiring,yes,,Posted an opening for an Accounts Payable Manager (source dated 2026-10-05).,https://jobs.example/northpine/ap-manager,2026-10-05,the likely manager of the open role,1,S001,

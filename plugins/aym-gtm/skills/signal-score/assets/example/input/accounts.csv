@@ -1,0 +1,12 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes
+A001,Brightmill Foods,brightmill.example,,650,manufacturing,US,P1,,active,,,
+A002,Northpine Logistics,northpine-logistics.example,northpine.example,420,logistics,US,P2,,active,,,
+A003,Coastal Ledger Group,coastal-ledger.example,,900,professional services,CA,P2,,active,,,
+A004,Ridgeway Health Partners,ridgewayhealth.example,,1500,healthcare services,US,P3,,active,,,
+A005,Quillstone Software,quillstone.example,,310,software,US,P2,,hold,,,
+A006,Tallgrass Freight,tallgrass-freight.example,,780,logistics,US,P3,customer,active,,,
+A007,Ironleaf Manufacturing,ironleaf.example,,1200,manufacturing,US,P3,,active,,,
+A008,Meridian Arc Consulting,meridianarc.example,,260,professional services,CA,,,live_deal,,,
+A009,Silverbirch Clinics,silverbirch.example,,540,healthcare services,CA,P3,,active,,,
+A010,Paywise Spend,paywise.example,,330,software,US,,competitor,active,,,
+A011,Fernhollow Packaging,fernhollow.example,,480,manufacturing,US,,,active,,,

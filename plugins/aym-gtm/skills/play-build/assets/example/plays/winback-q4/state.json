@@ -1,0 +1,32 @@
+{
+  "runs": [
+    {
+      "date": "2026-10-20",
+      "proposed": 3,
+      "new": 3
+    }
+  ],
+  "script_vars": {
+    "p08": {
+      "first_name": "Rafael",
+      "company": "Ironleaf Freight",
+      "last_touch": "2026-04-02",
+      "quiet_days": "201",
+      "last_topic": ""
+    },
+    "p10": {
+      "first_name": "Owen",
+      "company": "Maplecrest Clinics",
+      "last_touch": "2026-07-01",
+      "quiet_days": "111",
+      "last_topic": ""
+    },
+    "p15": {
+      "first_name": "Nadia",
+      "company": "Harborlantern Services",
+      "last_touch": "2026-07-10",
+      "quiet_days": "102",
+      "last_topic": ""
+    }
+  }
+}

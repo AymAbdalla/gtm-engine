@@ -1,0 +1,13 @@
+account_id,name,domain,other_domains,employees,industry,country,tier,relationship,status,owner,crm_id,notes
+A01,Northpine Logistics,northpine-logistics.example,,640,logistics,US,P1,,active,you,C-A01,
+A02,Brightmill Manufacturing,brightmill.example,,420,manufacturing,US,P2,,active,you,C-A02,
+A03,Coastal Ledger Partners,coastal-ledger.example,,380,professional services,US,P2,,active,you,C-A03,
+A04,Ironleaf Freight,ironleaf.example,,910,logistics,US,P1,,active,you,C-A04,
+A05,Maplecrest Health Services,maplecrest.example,,520,healthcare services,US,P2,,active,you,C-A05,
+A06,Riverbend Parts,riverbend-parts.example,,1450,manufacturing,US,P2,,active,you,C-A06,
+A07,Tidewell Cargo,tidewell.example,,330,logistics,US,P3,,active,you,C-A07,
+A08,Granite Arc Fabrication,granitearc.example,,760,manufacturing,US,P3,,active,you,C-A08,
+A09,Willowgate Advisory,willowgate.example,,450,professional services,US,P3,,active,you,C-A09,
+A10,Kestrel Tooling,kestrel-tooling.example,,1800,manufacturing,US,P2,,active,you,C-A10,
+A11,Orchard Row Clinics,orchardrow.example,,610,healthcare services,US,P3,,active,you,C-A11,
+A12,Quillstone Software,quillstone.example,,1300,software,US,P3,,active,you,C-A12,

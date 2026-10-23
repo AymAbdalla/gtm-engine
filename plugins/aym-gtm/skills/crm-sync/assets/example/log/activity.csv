@@ -1,0 +1,9 @@
+activity_id,timestamp,person_id,account_id,channel,direction,sequence,step,play_id,angle,opener,outcome,notes,source
+a001,2026-10-14T10:00:00-04:00,p02,A01,email,out,seq-trigger-finance,1,,,,sent,,manual
+a002,2026-10-14T10:05:00-04:00,p01,A01,email,out,seq-trigger-finance,1,,,,sent,,manual
+a003,2026-10-16T15:30:00-04:00,p02,A01,call,out,seq-trigger-finance,2,,,,connected,,manual
+a004,2026-10-16T15:36:00-04:00,p02,A01,call,in,seq-trigger-finance,2,,,,interested,wants a demo after month end,manual
+a005,2026-10-19T09:00:00-04:00,p08,A01,email,out,seq-trigger-finance,1,,,,bounced,,manual
+a006,2026-10-19T11:00:00-04:00,p05,A02,linkedin,out,,,,,,accepted,,manual
+a007,2026-12-01T09:00:00-05:00,p03,A01,email,out,,,,,,sent,,manual
+a008,2026-10-18T14:00:00-07:00,p07,A03,email,in,,,,,,opt_out,asked to be removed,manual

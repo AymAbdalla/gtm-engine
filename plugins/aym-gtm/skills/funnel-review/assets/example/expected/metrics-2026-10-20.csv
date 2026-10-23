@@ -1,0 +1,28 @@
+period,scope,metric,numerator,denominator,rate,ci_low,ci_high,label
+prior,overall,reply_rate,3,45,0.0667,0.0229,0.1786,measured
+prior,overall,meeting_rate,8,45,0.1778,0.0929,0.3133,measured
+prior,overall,connect_rate,55,234,0.2350,0.1853,0.2934,measured
+prior,overall,conversation_rate,21,55,0.3818,0.2652,0.5139,measured
+prior,overall,bounce_rate,0,75,0.0000,0.0000,0.0400,measured
+current,overall,reply_rate,11,84,0.1310,0.0747,0.2195,measured
+current,overall,meeting_rate,17,84,0.2024,0.1304,0.3004,measured
+current,overall,connect_rate,128,417,0.3070,0.2646,0.3528,measured
+current,overall,conversation_rate,36,128,0.2812,0.2106,0.3646,measured
+current,overall,bounce_rate,3,141,0.0213,0.0073,0.0607,measured
+current,segment:manufacturing,meeting_rate,4,28,0.1429,0.0570,0.3149,measured
+current,segment:manufacturing,reply_rate,4,28,0.1429,0.0570,0.3149,measured
+current,segment:mid-logistics,meeting_rate,6,21,0.2857,0.1381,0.4996,measured
+current,segment:mid-logistics,reply_rate,3,21,0.1429,0.0498,0.3464,measured
+current,segment:outside segments,meeting_rate,1,7,,,,too few to rate
+current,segment:outside segments,reply_rate,0,7,,,,too few to rate
+current,segment:services-health,meeting_rate,6,28,0.2143,0.1021,0.3954,measured
+current,segment:services-health,reply_rate,4,28,0.1429,0.0570,0.3149,measured
+test,test:opener-oct:A,conversations per connect,5,40,0.1250,0.0546,0.2611,measured
+test,test:opener-oct:B,conversations per connect,22,31,0.7097,0.5341,0.8390,measured
+test,test:opener-oct:C,conversations per connect,9,54,0.1667,0.0902,0.2874,measured
+test,test:angle-oct:trigger,people who replied per first touch,9,34,0.2647,0.1460,0.4312,measured
+test,test:angle-oct:problem_question,people who replied per first touch,2,50,0.0400,0.0110,0.1346,measured
+cohort,week:2026-08-31,meeting_rate,5,21,0.2381,0.1063,0.4509,measured
+cohort,week:2026-09-21,meeting_rate,5,9,,,,too few to rate
+cohort,week:2026-09-28 (not mature),meeting_rate,1,18,,,,too few to rate
+cohort,week:2026-10-05 (not mature),meeting_rate,3,12,,,,too few to rate

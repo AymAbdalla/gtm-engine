@@ -1,0 +1,21 @@
+person_id,account_id,first_name,last_name,title,email,email_status,email_score,phone,linkedin_url,country,timezone,status,last_touch_date,sequence,tags,notes,crm_id,source
+p01,A01,Sam,Whitlock,Chief Financial Officer,sam.whitlock@northpine-logistics.example,verified,92,+1-312-555-0101,https://linkedin.example/in/sam-whitlock,US,,active,,,,,C-P01,people
+p02,A01,Marcus,Lindqvist,Controller,marcus.lindqvist@northpine-logistics.example,verified,92,+1-312-555-0102,https://linkedin.example/in/marcus-lindqvist,US,,active,2026-10-14,,,,C-P02,people
+p03,A01,Priya,Raman,Director of IT,priya.raman@northpine-logistics.example,verified,92,+1-312-555-0103,https://linkedin.example/in/priya-raman,US,,active,,,,,C-P03,people
+p04,A02,Dana,Whitfield,Chief Financial Officer,dana.whitfield@brightmill.example,verified,92,+1-773-555-0104,https://linkedin.example/in/dana-whitfield,US,,active,,,,,C-P04,people
+p05,A02,Hollis,Brandt,VP Finance,hollis.brandt@brightmill.example,verified,92,+1-773-555-0105,https://linkedin.example/in/hollis-brandt,US,,active,,,,,C-P05,people
+p06,A02,Tessa,Moreau,Accounts Payable Manager,tessa.moreau@brightmill.example,catch_all,85,,https://linkedin.example/in/tessa-moreau,US,,active,,,,,C-P06,people
+p07,A03,Grace,Ilunga,Controller,grace.ilunga@coastal-ledger.example,verified,92,+1-617-555-0107,https://linkedin.example/in/grace-ilunga,US,,active,,seq-trigger-finance,,,C-P07,people
+p08,A04,Rafael,Duarte,VP Finance,rafael.duarte@ironleaf.example,verified,92,+1-206-555-0108,https://linkedin.example/in/rafael-duarte,US,,active,2026-04-02,,past_reply,,C-P08,people
+p09,A04,Mei,Sato,Controller,mei.sato@ironleaf.example,verified,92,+1-206-555-0109,https://linkedin.example/in/mei-sato,US,,active,2026-04-02,,,,C-P09,people
+p10,A05,Owen,Hale,CFO,owen.hale@maplecrest.example,verified,92,+1-617-555-0110,https://linkedin.example/in/owen-hale,US,,active,2026-07-01,,,,C-P10,people
+p11,A05,Lena,Brooks,Procurement Lead,lena.brooks@maplecrest.example,verified,92,+1-617-555-0111,https://linkedin.example/in/lena-brooks,US,,active,2026-07-01,,,,C-P11,people
+p12,A06,Ivy,Castellano,CFO,ivy.castellano@spendwise.example,verified,92,+1-512-555-0112,https://linkedin.example/in/ivy-castellano,US,,active,,,,,C-P12,people
+p13,A07,Corinne,Vasquez,CFO,corinne.vasquez@riverbend-parts.example,verified,92,+1-312-555-0113,https://linkedin.example/in/corinne-vasquez,US,,active,,,,,C-P13,people
+p14,A08,Theo,Nakamura,CFO,theo.nakamura@tallgrass-soft.example,verified,92,+1-512-555-0114,https://linkedin.example/in/theo-nakamura,US,,active,,,,,C-P14,people
+p15,A09,Nadia,Kowalski,"Vice President, Finance",nadia.kowalski@harborlantern.example,verified,92,+1-416-555-0115,https://linkedin.example/in/nadia-kowalski,CA,,active,2026-07-10,,,,C-P15,people
+p16,A09,Jonah,Pike,Sales Representative,jonah.pike@harborlantern.example,verified,92,+1-416-555-0116,https://linkedin.example/in/jonah-pike,CA,,active,2026-07-10,,,,C-P16,people
+p17,A10,Elena,Marsh,Chief Financial Officer,elena.marsh@quillstone-health.example,verified,92,+1-312-555-0117,https://linkedin.example/in/elena-marsh,US,,active,,,,,C-P17,people
+p18,A10,Felix,Grant,Controller,felix.grant@quillstone-health.example,verified,92,+1-312-555-0118,https://linkedin.example/in/felix-grant,US,,active,,,opted_out,,C-P18,people
+p19,A10,Ruth,Okoye,Accounts Payable Lead,ruth.okoye@quillstone-health.example,verified,92,+1-630-555-0119,https://linkedin.example/in/ruth-okoye,US,,active,,,,,C-P19,people
+p20,A01,Victor,Lane,Procurement Lead,victor.lane@northpine-logistics.example,verified,92,+1-312-555-0120,https://linkedin.example/in/victor-lane,US,,active,,,,,C-P20,people

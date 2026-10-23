@@ -1,0 +1,8 @@
+play_id,person_id,account_id,seat,sequence,sequence_start,variables,rank,approved,drop_reason
+signal-2026-10,p02,A01,manager of the open AP role,seq-trigger-finance,2026-10-13,"{""company"": ""Northpine"", ""trigger_fact"": ""you are hiring an Accounts Payable Manager""}",1,yes,
+signal-2026-10,p04,A02,decision maker,seq-trigger-finance,2026-10-19,"{""company"": ""Brightmill"", ""trigger_fact"": ""you named a new CFO in September""}",2,yes,
+signal-2026-10,p09,A04,decision maker,seq-trigger-finance,2026-10-13,"{""company"": ""Ironleaf"", ""trigger_fact"": ""you opened a second distribution site""}",3,yes,
+signal-2026-10,p10,A04,influencer,seq-trigger-finance,2026-10-14,"{""company"": ""Ironleaf"", ""trigger_fact"": ""you opened a second distribution site""}",4,yes,
+signal-2026-10,p11,A05,champion,seq-trigger-finance,2026-10-20,"{""company"": ""Maplecrest""}",5,yes,
+signal-2026-10,p12,A07,decision maker,seq-trigger-finance,2026-10-14,"{""company"": ""Riverbend"", ""trigger_fact"": ""you are moving to a new ERP""}",6,yes,
+signal-2026-10,p05,A02,influencer,seq-trigger-finance,2026-10-20,"{""company"": ""Brightmill"", ""trigger_fact"": ""you named a new CFO in September""}",7,,

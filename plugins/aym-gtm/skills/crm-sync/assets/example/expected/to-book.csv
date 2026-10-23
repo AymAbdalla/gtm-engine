@@ -1,0 +1,7 @@
+person_id,account_id,crm_id,first_name,last_name,title,email,phone,linkedin_url,country,status,tags
+p02,A01,C-P02,,,,,+1-312-555-0152,,,,
+p03,A01,C-P03,,,,,,,,,bounced
+p04,A02,C-P04,,,,,,,,,bounced
+p07,A03,,,,,,,,,do_not_contact,opted_out
+p08,A01,C-P08,,,,,,,,,bounced
+,A03,C-P11,Mei,Sato,AP Lead,mei.sato@coastal-ledger.example,+1-206-555-0111,https://linkedin.example/in/mei-sato,US,active,

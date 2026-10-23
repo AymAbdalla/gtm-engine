@@ -1,0 +1,20 @@
+{
+  "id": "winback-q4",
+  "type": "reactivation",
+  "name": "Q4 win-back",
+  "trigger": "accounts quiet past their usual rhythm, or tagged lost_deal",
+  "sequence": "seq-winback",
+  "start": "2026-10-21",
+  "channel": "any",
+  "daily_cap": 3,
+  "personas": [
+    "cfo",
+    "controller"
+  ],
+  "stop_rules": [
+    "any reply, including an out-of-office, pauses",
+    "a complaint stops",
+    "meeting booked",
+    "not interested"
+  ]
+}

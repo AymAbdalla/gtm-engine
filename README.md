@@ -1,5 +1,7 @@
 # gtm-engine
 
+[![tests](https://github.com/AymAbdalla/gtm-engine/actions/workflows/tests.yml/badge.svg)](https://github.com/AymAbdalla/gtm-engine/actions/workflows/tests.yml)
+
 Ten GTM engineering skills for Claude Code and Codex, packaged as the `aym-gtm` plugin. They cover outbound from start to finish: who to sell to, which data is safe to use, who has a reason to hear from you now, who goes into a play, what to say, what to do today, how the book and the CRM stay in step, whether any of it works, and what to automate first.
 
 Every skill reads and writes plain files (CSV, JSON, Markdown) in one workspace folder, and works with any CRM, sequencer or data vendor. Nothing sends a message, enrolls anyone or writes to a live system. A script does the checking and a person makes every decision that can't be undone.

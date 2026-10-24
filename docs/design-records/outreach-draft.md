@@ -73,6 +73,6 @@ Changed:
 
 Checks: `tests/test_gtm_outreach_draft.py` TruthChecks (the review's two probe drafts); example batch verdicts unchanged; test fixture heading and one greeting aligned to Dana.
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).
 
-Independent review (Oct 22) findings fixed: Fewer false alarms: a hyphen joins words ("two-minute", "year-round"), `copy.number_ok_phrases` skips "first/second half", bare "looking into" left the intent list, and the greeting check allows short forms, a few nicknames, accents and "Hi there". A wrong accented name is still caught. Tests: TruthChecks.
+Second review (Oct 22) findings fixed: Fewer false alarms: a hyphen joins words ("two-minute", "year-round"), `copy.number_ok_phrases` skips "first/second half", bare "looking into" left the intent list, and the greeting check allows short forms, a few nicknames, accents and "Hi there". A wrong accented name is still caught. Tests: TruthChecks.

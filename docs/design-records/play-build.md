@@ -91,6 +91,6 @@ Changed:
 
 Checks: `tests/test_gtm_play_build.py` (MissingSettingsTests, HoldoutTests, LiveDealTests); test helper now sets `daily_cap`; example outputs regenerated (one reason now says `account status live_deal`).
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).
 
-Independent review (Oct 22) findings fixed: The holdout now runs after seat choice, so it counts the seat that would have been touched (the same unit as the worked side), and an override cannot add someone back at a held-out account. Tests: HoldoutTests.
+Second review (Oct 22) findings fixed: The holdout now runs after seat choice, so it counts the seat that would have been touched (the same unit as the worked side), and an override cannot add someone back at a held-out account. Tests: HoldoutTests.

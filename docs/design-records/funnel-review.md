@@ -81,4 +81,4 @@ Changed:
 
 Checks: `tests/test_gtm_funnel_review.py` (LagAndCohorts, HoldoutLift); example expected report and metrics refreshed.
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).

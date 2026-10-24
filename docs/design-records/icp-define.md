@@ -79,6 +79,6 @@ Changed:
 
 Checks: `tests/test_gtm_shared.py` (probe verdicts, tech rule, copy match); `tests/test_gtm_icp_define.py` WonDealsAndReviewTests.
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).
 
-Independent review (Oct 22) findings fixed: `gtm_fit.py` (all four copies) treats "nan" and "inf" headcounts as unknown, and `icp_check.py` no longer crashes on them. A won-deals file needs only `account_id`; deals the rule cannot judge are listed as unknown, not outside. Tests: NotANumberTests, WonDealsAndReviewTests.
+Second review (Oct 22) findings fixed: `gtm_fit.py` (all four copies) treats "nan" and "inf" headcounts as unknown, and `icp_check.py` no longer crashes on them. A won-deals file needs only `account_id`; deals the rule cannot judge are listed as unknown, not outside. Tests: NotANumberTests, WonDealsAndReviewTests.

@@ -76,4 +76,4 @@ Changed:
 
 Checks: `tests/test_gtm_motion_map.py` HonestPickTests; the broken example's expected `map.md` and one assertion now carry the provisional label.
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).

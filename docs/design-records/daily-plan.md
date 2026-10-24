@@ -84,4 +84,4 @@ Changed:
 
 Checks: `tests/test_gtm_daily_plan.py` (LiveDealTests, StatedDefaultTests); `tests/test_gtm_shared.py` live-deal chain; example expected files unchanged.
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).

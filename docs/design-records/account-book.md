@@ -72,6 +72,6 @@ Changed:
 
 Checks: `tests/test_gtm_account_book.py` (live-deal probe, AccountUpdateTests, FitRankingAndReadinessTests); `tests/test_gtm_shared.py` probe and live-deal chain.
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).
 
-Independent review (Oct 22) findings fixed: A manual `strategy_override` no longer beats the blocking rules (parent decides, excluded, hold, outside the ICP, archived, live deal); the reason says the override was not applied. `status` is compared without case. Test: StrategyTests.
+Second review (Oct 22) findings fixed: A manual `strategy_override` no longer beats the blocking rules (parent decides, excluded, hold, outside the ICP, archived, live deal); the reason says the override was not applied. `status` is compared without case. Test: StrategyTests.

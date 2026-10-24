@@ -69,4 +69,4 @@ Changed:
 
 Checks: `tests/test_gtm_signal_score.py` (DefaultExpiryTests, FitQuadrantTests, intent-only, updated example counts: 12 live, 2 expired, A001 5.0).
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).

@@ -79,6 +79,6 @@ Changed:
 
 Checks: `tests/test_gtm_shared.py`; `tests/test_gtm_data_quality.py` MatchingProbeTests; two account-screen assertions now use the shared reason wording.
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).
 
-Independent review (Oct 22) findings fixed: LinkedIn member ids are matched case-sensitively (`ACoAA...`, `ACwAA...`), so a name slug like `acosta-maria` still gets the name check. Test: MatchingProbeTests.
+Second review (Oct 22) findings fixed: LinkedIn member ids are matched case-sensitively (`ACoAA...`, `ACwAA...`), so a name slug like `acosta-maria` still gets the name check. Test: MatchingProbeTests.

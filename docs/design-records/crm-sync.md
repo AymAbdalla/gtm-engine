@@ -87,6 +87,6 @@ Changed:
 
 Checks: `tests/test_gtm_crm_sync.py` (AccountStatusTests, MappingConfirmationTests); `tests/test_gtm_shared.py` live-deal chain (fails if crm-sync's account updates are removed); expected files refreshed (fingerprint, new empty `to-book-accounts.csv`, report header).
 
-An independent review followed on Oct 22.
+Second review: an AI-assisted check pass followed on Oct 22 (findings fixed below).
 
-Independent review (Oct 22) findings fixed: A book `live_deal` goes back to active only when the export has that account's opportunities and all are closed; one missing from the export stays live and the report names it. `opportunities.csv` now has the same row floor as people and accounts. Tests: AccountStatusTests.
+Second review (Oct 22) findings fixed: A book `live_deal` goes back to active only when the export has that account's opportunities and all are closed; one missing from the export stays live and the report names it. `opportunities.csv` now has the same row floor as people and accounts. Tests: AccountStatusTests.

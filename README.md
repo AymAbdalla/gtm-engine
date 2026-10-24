@@ -6,6 +6,8 @@ Ten GTM engineering skills for Claude Code and Codex, packaged as the `aym-gtm` 
 
 Every skill reads and writes plain files (CSV, JSON, Markdown) in one workspace folder, and works with any CRM, sequencer or data vendor. Nothing sends a message, enrolls anyone or writes to a live system. A script does the checking and a person makes every decision that can't be undone.
 
+**Case study:** [how these skills were built, tested and fixed](docs/case-study.md), with the evidence for each claim and its limits.
+
 ## Install
 
 Claude Code:
@@ -32,7 +34,7 @@ Then install `aym-gtm` from the Codex plugin list. Run a skill directly with `/a
 | `signal-score` | Who has a real reason to hear from us now? Scores dated buying signals and writes one sourced why-now line per account. |
 | `account-book` | What is the one record of every account and person? Merges sources, keeps your edits, gates each channel, picks one strategy per account. |
 | `play-build` | Who goes into this play, and why? Proposes an enrollment list with every drop counted and explained. |
-| `outreach-draft` | What do we say, and is it true? Drafts messages and checks every number, name and claim against its source. |
+| `outreach-draft` | What do we say, and is it true? Drafts messages, then checks numbers, names, claims and the send gate, and holds anything it can't back for a person. |
 | `daily-plan` | What do I do today, and did it all get done? Plans the day in each prospect's calling hours and closes it with nothing unlogged. |
 | `crm-sync` | How do the book and the CRM stay in step? Compares both with their last agreed values and writes a plan a person applies. |
 | `funnel-review` | Is any of this working, and how sure are we? Rates with counts and 95% ranges, pre-registered tests, at most three actions. |
@@ -53,7 +55,7 @@ Each skill folder has a `SKILL.md`, reference files, its scripts and a made-up e
 ## Results
 
 - **Pressure tests (Oct 21, 2026).** Each skill was run by separate helper sessions on five kinds of case: a normal request, an ambiguous one, a broken input, a missing tool and a request it should not take. The helpers were not fully isolated from the session running them, so this is a strong check, not an outside one. 49 of 50 cases passed. The failure was `play-build` choosing a daily cap and dates itself on an ambiguous request instead of asking. Four more skills (`daily-plan`, `crm-sync`, `funnel-review`, `motion-map`) passed while assuming a default instead of asking, and `signal-score` once marked an account playable on research interest alone.
-- **Quality review and fixes (Oct 22, 2026).** A skill-by-skill review led to one shared ICP-fit rule and to open deals being protected end to end, plus smaller fixes, including all of the findings above. An independent review then found seven more problems, and those were fixed too. Five reruns of the affected cases passed.
+- **Quality review and fixes (Oct 22, 2026).** A skill-by-skill review led to one shared ICP-fit rule and to open deals being protected end to end, plus smaller fixes, including all of the findings above. A second, AI-assisted review pass then found seven more problems, and those were fixed too. Five reruns of the affected cases passed.
 - **Tests.** 365 unit tests cover the scripts, the rules shared across skills and each example workspace.
 
 ## Tests

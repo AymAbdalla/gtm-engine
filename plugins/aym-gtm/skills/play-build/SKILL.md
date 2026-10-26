@@ -48,3 +48,7 @@ When the user has no workspace, offer the made-up example in [assets/example](as
 ## Report
 
 Tell the user: the files written; proposed count and how many are new; the biggest drops in the funnel; everything under "Needs you" in `report.md` (approvals, sources to open before the first touch, blank variables, missing named leaders, people to reply to in an existing thread, people you added who need a reply by hand first, rows that were approved and are now blocked); rule ideas from overrides; whether the play is still finding people. Say plainly that nothing was enrolled, sent or written to a CRM or sequencer.
+
+## Independent check
+
+When a run is substantial (more than a quick answer: files the user will rely on, send from or share), only a fresh chat, or the other tool (Codex for Claude's work, or the reverse), counts as an independent check of its output. A helper this chat starts gives a "helper review" and this chat's own look is "self-review"; neither counts. So end by saving the output and giving the user one line to paste into a fresh chat: what to check, where it is, what it must match (the brief, the sources, the rules above), "treat this chat's report as claims to verify, not evidence", and "report only".

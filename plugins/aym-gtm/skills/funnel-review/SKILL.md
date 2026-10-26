@@ -66,3 +66,7 @@ Tell the user: the files written, the period and row counts, excluded rows and w
 ## Try it
 
 `python3 <skill-dir>/scripts/funnel_report.py --workspace <skill-dir>/assets/example --today 2026-10-20 --period-days 30 --out <any empty folder>` runs two 30-day periods of made-up Ledgerline activity with an opener test, an angle test, targets, two logged changes and a few bad log rows. The expected output is in `assets/example/expected/`.
+
+## Independent check
+
+When a run is substantial (more than a quick answer: files the user will rely on, send from or share), only a fresh chat, or the other tool (Codex for Claude's work, or the reverse), counts as an independent check of its output. A helper this chat starts gives a "helper review" and this chat's own look is "self-review"; neither counts. So end by saving the output and giving the user one line to paste into a fresh chat: what to check, where it is, what it must match (the brief, the sources, the rules above), "treat this chat's report as claims to verify, not evidence", and "report only".

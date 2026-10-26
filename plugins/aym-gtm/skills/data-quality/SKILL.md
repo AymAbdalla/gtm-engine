@@ -60,3 +60,7 @@ If the columns differ, map them to the shared names in a copy. Never edit the us
 - Counts per bucket (clean), safe vs held with the top held reasons (verify), or, for an audit, the scope (what was read, checked and skipped), the verdict in its "within scope" wording, the health score and grade, and ticket counts per step (audit). Never call the CRM clean or passing.
 - What needs the user: review queue items, people to enrich, tickets to recheck and submit.
 - What this skill did not do: send, enroll, call a vendor or change a CRM record.
+
+## Independent check
+
+When a run is substantial (more than a quick answer: files the user will rely on, send from or share), only a fresh chat, or the other tool (Codex for Claude's work, or the reverse), counts as an independent check of its output. A helper this chat starts gives a "helper review" and this chat's own look is "self-review"; neither counts. So end by saving the output and giving the user one line to paste into a fresh chat: what to check, where it is, what it must match (the brief, the sources, the rules above), "treat this chat's report as claims to verify, not evidence", and "report only".

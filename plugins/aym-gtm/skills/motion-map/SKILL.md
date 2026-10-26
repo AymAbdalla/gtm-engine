@@ -52,3 +52,7 @@ Tell the user: the files written, whether the map is clean (findings and uncheck
 ## Try it
 
 `python3 <skill-dir>/scripts/check_map.py --workspace <skill-dir>/assets/example --out <any empty folder>` checks a made-up 13-stage outbound motion (clean). `--workspace <skill-dir>/assets/example/broken` checks the same motion with an edge to a missing stage and a reply decision with one branch. See [the example notes](assets/example/README.md).
+
+## Independent check
+
+When a run is substantial (more than a quick answer: files the user will rely on, send from or share), only a fresh chat, or the other tool (Codex for Claude's work, or the reverse), counts as an independent check of its output. A helper this chat starts gives a "helper review" and this chat's own look is "self-review"; neither counts. So end by saving the output and giving the user one line to paste into a fresh chat: what to check, where it is, what it must match (the brief, the sources, the rules above), "treat this chat's report as claims to verify, not evidence", and "report only".

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.6.1 (2026-10-26)
+
+- Each skill ends a substantial run (files you'll rely on, send from or share) by giving you one line to paste into a fresh chat, or the other tool, that checks the output against its brief and sources, report only. A helper the working chat starts gives only a "helper review", and the chat's own look is "self-review"; neither counts as an independent check.
+- `SECURITY.md` says how to report a security problem privately.
+
 ## 0.6.0 (2026-10-23)
 
 - First release as its own repository. Until now, `aym-gtm` shipped inside the agent-skills collection (0.4.0-rc.1 to 0.5.0); it now has its own version.

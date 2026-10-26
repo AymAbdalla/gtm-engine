@@ -64,3 +64,7 @@ Tell the user:
 - who was left out of an export and why
 - what needs them: resolve conflicts, make the CRM fixes, confirm any challenger before changing the top list
 - what the skill did not do: send, enroll, or write to any system
+
+## Independent check
+
+When a run is substantial (more than a quick answer: files the user will rely on, send from or share), only a fresh chat, or the other tool (Codex for Claude's work, or the reverse), counts as an independent check of its output. A helper this chat starts gives a "helper review" and this chat's own look is "self-review"; neither counts. So end by saving the output and giving the user one line to paste into a fresh chat: what to check, where it is, what it must match (the brief, the sources, the rules above), "treat this chat's report as claims to verify, not evidence", and "report only".

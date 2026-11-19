@@ -8,6 +8,8 @@ Every skill reads and writes plain files (CSV, JSON, Markdown) in one workspace 
 
 **Case study:** [how these skills were built, tested and fixed](docs/case-study.md), with the evidence for each claim and its limits.
 
+**Built with:** Python 3.13 scripts and 365 unit tests (unittest), CSV, JSON and Markdown workspace files, Markdown agent skills that install in Claude Code and Codex, and GitHub Actions running the tests on every push and pull request.
+
 ## Install
 
 Claude Code:
